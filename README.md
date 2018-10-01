@@ -1,14 +1,6 @@
-# Concordia University
+# Concordia University Department of Computer Science and Software Engineering - Advanced program design with C++
 
-# Department of Computer Science
-
-# and Software Engineering
-
-# Advanced program design with C++
-
-# COMP 345 --- F 2018 (Section N)
-
-# Assignment #
+# Assignment #1
 
 Problem statement
 
