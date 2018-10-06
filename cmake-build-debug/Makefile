@@ -123,59 +123,32 @@ COMP_345_Project/fast:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/build
 .PHONY : COMP_345_Project/fast
 
-Part-1-a/Map.o: Part-1-a/Map.cpp.o
+Part-1/Map.o: Part-1/Map.cpp.o
 
-.PHONY : Part-1-a/Map.o
-
-# target to build an object file
-Part-1-a/Map.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o
-.PHONY : Part-1-a/Map.cpp.o
-
-Part-1-a/Map.i: Part-1-a/Map.cpp.i
-
-.PHONY : Part-1-a/Map.i
-
-# target to preprocess a source file
-Part-1-a/Map.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.i
-.PHONY : Part-1-a/Map.cpp.i
-
-Part-1-a/Map.s: Part-1-a/Map.cpp.s
-
-.PHONY : Part-1-a/Map.s
-
-# target to generate assembly for a file
-Part-1-a/Map.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.s
-.PHONY : Part-1-a/Map.cpp.s
-
-Part1/Map.o: Part1/Map.cpp.o
-
-.PHONY : Part1/Map.o
+.PHONY : Part-1/Map.o
 
 # target to build an object file
-Part1/Map.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o
-.PHONY : Part1/Map.cpp.o
+Part-1/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o
+.PHONY : Part-1/Map.cpp.o
 
-Part1/Map.i: Part1/Map.cpp.i
+Part-1/Map.i: Part-1/Map.cpp.i
 
-.PHONY : Part1/Map.i
+.PHONY : Part-1/Map.i
 
 # target to preprocess a source file
-Part1/Map.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.i
-.PHONY : Part1/Map.cpp.i
+Part-1/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i
+.PHONY : Part-1/Map.cpp.i
 
-Part1/Map.s: Part1/Map.cpp.s
+Part-1/Map.s: Part-1/Map.cpp.s
 
-.PHONY : Part1/Map.s
+.PHONY : Part-1/Map.s
 
 # target to generate assembly for a file
-Part1/Map.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.s
-.PHONY : Part1/Map.cpp.s
+Part-1/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s
+.PHONY : Part-1/Map.cpp.s
 
 # Help Target
 help:
@@ -186,12 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... COMP_345_Project"
-	@echo "... Part-1-a/Map.o"
-	@echo "... Part-1-a/Map.i"
-	@echo "... Part-1-a/Map.s"
-	@echo "... Part1/Map.o"
-	@echo "... Part1/Map.i"
-	@echo "... Part1/Map.s"
+	@echo "... Part-1/Map.o"
+	@echo "... Part-1/Map.i"
+	@echo "... Part-1/Map.s"
 .PHONY : help
 
 

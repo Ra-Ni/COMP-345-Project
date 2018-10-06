@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o"
-  "CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o"
+  "CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o"
   "COMP_345_Project.pdb"
   "COMP_345_Project"
 )

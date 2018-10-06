@@ -57,45 +57,30 @@ include CMakeFiles/COMP_345_Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/COMP_345_Project.dir/flags.make
 
-CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o: ../Part1/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part1/Map.cpp"
+CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
+CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: ../Part-1/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp"
 
-CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part1/Map.cpp" > CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.i
+CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp" > CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i
 
-CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part1/Map.cpp" -o CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.s
-
-CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o: ../Part-1-a/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1-a/Map.cpp"
-
-CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1-a/Map.cpp" > CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.i
-
-CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1-a/Map.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.s
+CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s
 
 # Object files for target COMP_345_Project
 COMP_345_Project_OBJECTS = \
-"CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o" \
-"CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o"
+"CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o"
 
 # External object files for target COMP_345_Project
 COMP_345_Project_EXTERNAL_OBJECTS =
 
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part1/Map.cpp.o
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-1-a/Map.cpp.o
+COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o
 COMP_345_Project: CMakeFiles/COMP_345_Project.dir/build.make
 COMP_345_Project: CMakeFiles/COMP_345_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable COMP_345_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable COMP_345_Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COMP_345_Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
