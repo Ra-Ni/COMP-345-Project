@@ -123,6 +123,33 @@ COMP_345_Project/fast:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/build
 .PHONY : COMP_345_Project/fast
 
+Drivers/Tests.o: Drivers/Tests.cpp.o
+
+.PHONY : Drivers/Tests.o
+
+# target to build an object file
+Drivers/Tests.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o
+.PHONY : Drivers/Tests.cpp.o
+
+Drivers/Tests.i: Drivers/Tests.cpp.i
+
+.PHONY : Drivers/Tests.i
+
+# target to preprocess a source file
+Drivers/Tests.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.i
+.PHONY : Drivers/Tests.cpp.i
+
+Drivers/Tests.s: Drivers/Tests.cpp.s
+
+.PHONY : Drivers/Tests.s
+
+# target to generate assembly for a file
+Drivers/Tests.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.s
+.PHONY : Drivers/Tests.cpp.s
+
 Part-1/Map.o: Part-1/Map.cpp.o
 
 .PHONY : Part-1/Map.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... COMP_345_Project"
+	@echo "... Drivers/Tests.o"
+	@echo "... Drivers/Tests.i"
+	@echo "... Drivers/Tests.s"
 	@echo "... Part-1/Map.o"
 	@echo "... Part-1/Map.i"
 	@echo "... Part-1/Map.s"

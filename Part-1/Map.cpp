@@ -9,23 +9,17 @@ bool Edge::comp_dest(Edge e1, Edge e2) {
 }
 
 template<typename T>
-Map<T>::Map(T *identifier, const int size) {
-    len = new int(size);
-    nodes = new T[*len];
-    forilen {
-        nodes[i] = identifier[i];
-    }
+Map<T>::Map(T *identifier, const int &size) {
+    len = &size;
+    nodes = &(*identifier);
     edges = new vector<Edge>;
-    itr = edges->begin();
     visited = new bool[*len];
 }
 
 template<typename T>
 Map<T>::~Map() {
-    delete [] nodes;
-    delete len;
     delete edges;
-    delete [] visited;
+    delete[] visited;
     len = nullptr;
     visited = nullptr;
     edges = nullptr;
@@ -36,38 +30,38 @@ template<typename T>
 void Map<T>::link(int from, int to) {
     assert(from < *len && from >= 0);
     assert(to < *len && to >= 0);
-    edges->push_back(Edge{from,to});
-    edges->push_back(Edge{to,from});
+    edges->push_back(Edge{from, to});
+    edges->push_back(Edge{to, from});
 }
 
 template<typename T>
-void Map<T>::traverse(int start) {
-    assert(start < *len && start >= 0);
-    sort(edges->begin(),edges->end(),Edge::comp_dest);
-    DFS(start);
+void Map<T>::traverse() {
     bool flag = false;
-    forilen {
-        if(!visited[i]) {
-            cout << "Couldn't traverse " << nodes[i] << endl;
-            if(!flag) {
-                flag = true;
+    sort(edges->begin(), edges->end(), Edge::comp_dest);
+    DFS(edges->at(0));
+    for(int i = 0 ; i < *len ; i++) {
+        if (!visited[i]) {
+            flag = true;
+            break;
             }
-        }
-
-    };
-    if(flag) {
+    }
+    if (flag) {
         cout << "Graph is not connected." << endl;
+    }
+    else {
+        cout << "Graph is connected" << endl;
     }
 }
 
 template<typename T>
-void Map<T>::DFS(int start) {
-    Edge e = edges->at(start);
-    visited[start] = true;
-    int i = start+1;
-    while(i < edges->size()) {
-        if(!visited[edges->at(i).dest]) {
-            DFS(edges->at(i).dest);
+void Map<T>::DFS(Edge start) {
+    visited[start.src] = true;
+    auto i = 0;
+    Edge m;
+    while (i < edges->size()) {
+        m = edges->at(i);
+        if (!visited[m.src] && visited[m.dest]) {
+            DFS(m);
         }
         i++;
     }
@@ -75,14 +69,20 @@ void Map<T>::DFS(int start) {
 
 template<typename T>
 void Map<T>::print() {
-    sort(edges->begin(),edges->end(),Edge::comp_src);
-    itr = edges->begin();
-    forilen {
+    sort(edges->begin(), edges->end(), Edge::comp_src);
+    auto itr = edges->begin();
+    for(int i = 0 ; i < *len ; i++) {
         cout << nodes[i];
-        while(itr != edges->end() && itr->src == i) {
+        while (itr != edges->end() && itr->src == i) {
             cout << " -> " << nodes[itr->dest];
             itr++;
         }
         cout << endl;
     }
 }
+
+template
+class Map<string>;
+
+template
+class Map<int>;

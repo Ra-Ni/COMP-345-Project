@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h">
+			<Option target="COMP_345_Project"/>
+		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>

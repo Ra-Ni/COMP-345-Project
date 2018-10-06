@@ -4,9 +4,7 @@
 #include <iostream>
 #include <cassert>
 #include <vector>
-#include <cmath>
 #include <algorithm>
-#define forilen for(int i = 0 ; i < *len ; i++)
 using namespace std;
 
 struct Edge {
@@ -17,17 +15,16 @@ struct Edge {
 
 template<typename T> class Map {
 private:
-    int* len;
+    const int* len;
     T* nodes;
     vector<Edge>* edges;
-    vector<Edge>::iterator itr;
     bool* visited;
+    void DFS(Edge start);
 public:
-    explicit Map(T identifier[], const int size);
+    explicit Map(T identifier[],const int &size);
     ~Map();
     void link(int from, int to);
-    void traverse(int start);
-    void DFS(int start);
+    void traverse();
     void print();
 };
 #endif //COMP_345_PROJECT_MAP_H

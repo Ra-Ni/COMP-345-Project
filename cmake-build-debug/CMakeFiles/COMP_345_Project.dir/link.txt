@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o  -o COMP_345_Project 
+/usr/bin/c++  -g   CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o  -o COMP_345_Project 
