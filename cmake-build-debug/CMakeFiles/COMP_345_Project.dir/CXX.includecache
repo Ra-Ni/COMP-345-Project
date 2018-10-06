@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1-a/Map.cpp
+Map.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1-a/Map.h
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1-a/Map.h
+string
+-
+iostream
+-
+cassert
+-
+vector
+-
+

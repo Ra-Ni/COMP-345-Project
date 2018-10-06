@@ -77,11 +77,4 @@ public:
 
 };
 
-
-int main() {
-    Map m;
-    m.traverse(0);
-}
-
-
 #endif //COMP_345_PROJECT_MAP_H
