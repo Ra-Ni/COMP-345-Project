@@ -4,76 +4,113 @@
 #include <iostream>
 #include <cassert>
 #include <vector>
+#include <cmath>
+#include <algorithm>
+#define forilen for(int i = 0 ; i < *len ; i++)
 using namespace std;
 
-template<class T> struct Node {
-    T _data;
-    vector<Node<T>*> _edges;
-    Node() = default;
-    explicit Node(T data) {
-        _data = data;
+struct Edge {
+    int src,dest;
+    static bool comp_src(Edge e1, Edge e2) {
+        return e1.src < e2.src;
+    }
+    static bool comp_dest(Edge e1, Edge e2) {
+        return e1.dest < e2.dest;
     }
 };
 
-template<class T> class Map {
+template<typename T> class Map {
 private:
-    int _size;
-    struct Node<T>* _arr;
+    int* len;
+    T* nodes;
+    vector<Edge>* edges;
+    vector<Edge>::iterator itr;
+    bool* visited;
+
 public:
     explicit Map(T identifier[], const int size) {
-        _size = size;
-        _arr = new Node<T>[size];
-        for(int i = 0 ; i < size; i++) {
-            _arr[i]._data = move(identifier[i]); //security issue, may need move();
+        len = new int(size);
+        nodes = new T[*len];
+        forilen {
+            nodes[i] = identifier[i];
         }
+        edges = new vector<Edge>;
+        itr = edges->begin();
+        visited = new bool[*len];
     }
     ~Map() {
-        delete [] _arr;
-        _arr = nullptr;
+        delete [] nodes;
+        delete len;
+        delete edges;
+        delete [] visited;
+        len = nullptr;
+        visited = nullptr;
+        edges = nullptr;
+        nodes = nullptr;
+    }
+    void link(int from, int to) {
+        assert(from < *len && from >= 0);
+        assert(to < *len && to >= 0);
+        edges->push_back(Edge{from,to});
+        edges->push_back(Edge{to,from});
     }
 
-    void link(int from, int to) {
-        assert(from < _size && from >= 0);
-        assert(to < _size && to >= 0);
-        (_arr[from])._edges.push_back(&_arr[to]);
-    }
-    void print() {
-        Node<T>* curr;
-        auto* s = new string("");
-        for(int i = 0; i < _size; i++) {
-            curr = &_arr[i];
-            auto j = curr->_edges.begin();
-            s->append('\'' + curr->_data + '\'');
-            if(j != curr->_edges.end()) {
-                s->append(" -> ");
-            }
-            while (j != curr->_edges.end()) {
-                s->append('\'' + (*j)->_data + '\'');
-                if (++j != curr->_edges.end()) {
-                    s->append(" -> ");
+    void traverse(int start) {
+        assert(start < *len && start >= 0);
+        sort(edges->begin(),edges->end(),Edge::comp_dest);
+        DFS(start);
+        bool flag = false;
+        forilen {
+            if(!visited[i]) {
+                cout << "Couldn't traverse " << nodes[i] << endl;
+                if(!flag) {
+                    flag = true;
                 }
             }
-            s->append("\n");
+
+        };
+        if(flag) {
+            cout << "Graph is not connected." << endl;
         }
-        cout << *s;
     }
-
-
+    void DFS(int start) {
+        Edge e = edges->at(start);
+        visited[start] = true;
+        int i = start+1;
+        while(i < edges->size()) {
+            if(!visited[edges->at(i).dest]) {
+                DFS(edges->at(i).dest);
+            }
+            i++;
+        }
+    }
+    void print() {
+        sort(edges->begin(),edges->end(),Edge::comp_src);
+        itr = edges->begin();
+        forilen {
+            cout << nodes[i];
+            while(itr != edges->end() && itr->src == i) {
+                cout << " -> " << nodes[itr->dest];
+                itr++;
+            }
+            cout << endl;
+        }
+    }
 
 };
 
 
-/*
+
 int main() {
     string s[5] = {"Manhatton", "Jersey", "id", "id1", "id2"};
     Map<string> g(s,5);
     g.link(0,1);
-    g.link(0,2);
-    g.link(1,3);
-    g.link(4,3);
+    g.link(1,2);
     g.print();
+    g.traverse(3);
+
 }
 
-*/
+
 
 #endif //COMP_345_PROJECT_MAP_H
