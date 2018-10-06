@@ -1,7 +1,3 @@
-//
-// Created by rrafid on 10/6/18.
-//
-
 #include "Tests.h"
 
 void Tests::map() {
