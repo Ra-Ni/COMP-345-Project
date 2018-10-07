@@ -1,4 +1,10 @@
+#ifndef MAP_H
 #include "Map.h"
+#endif
+#include <algorithm>
+#include <string>
+#include <iostream>
+#include <cassert>
 
 bool Edge::comp_src(Edge e1, Edge e2) {
     return e1.src < e2.src;
@@ -41,7 +47,7 @@ void Map<T>::traverse() {
         if (!visited[i]) {
             flag = true;
             break;
-            }
+        }
     }
     if (flag) {
         std::cout << "Graph is not connected." << std::endl;
@@ -80,7 +86,7 @@ void Map<T>::print() {
 }
 
 template
-class Map<string>;
+class Map<std::string>;
 
 template
 class Map<int>;

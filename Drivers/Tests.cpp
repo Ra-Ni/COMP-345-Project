@@ -1,4 +1,5 @@
 #include "Tests.h"
+#include <iostream>
 using namespace std;
 
 void Tests::map() {
@@ -29,4 +30,5 @@ void Tests::map() {
     m.link(3,1);
     cout << "\nCalling DFS algorithm:\n";
     m.traverse();
+
 }

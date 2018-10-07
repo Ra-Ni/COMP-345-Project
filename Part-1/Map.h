@@ -1,11 +1,6 @@
 #ifndef COMP_345_PROJECT_MAP_H
 #define COMP_345_PROJECT_MAP_H
-#include <string>
-#include <iostream>
-#include <cassert>
 #include <vector>
-#include <algorithm>
-using namespace std;
 
 struct Edge {
     int src,dest;
@@ -16,12 +11,12 @@ struct Edge {
 template<typename T> class Map {
 private:
     const int* len;
-    vector<T>* nodes;
-    vector<Edge>* edges;
+    std::vector<T>* nodes;
+    std::vector<Edge>* edges;
     bool* visited;
     void DFS(Edge start);
 public:
-    explicit Map(vector<T>* vnodes);
+    explicit Map(std::vector<T>* vnodes);
     ~Map();
     void link(int from, int to);
     void traverse();

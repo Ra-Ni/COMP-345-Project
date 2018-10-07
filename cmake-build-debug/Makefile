@@ -204,6 +204,33 @@ Part-2/MapLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s
 .PHONY : Part-2/MapLoader.cpp.s
 
+Resources/SP.o: Resources/SP.cpp.o
+
+.PHONY : Resources/SP.o
+
+# target to build an object file
+Resources/SP.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.o
+.PHONY : Resources/SP.cpp.o
+
+Resources/SP.i: Resources/SP.cpp.i
+
+.PHONY : Resources/SP.i
+
+# target to preprocess a source file
+Resources/SP.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.i
+.PHONY : Resources/SP.cpp.i
+
+Resources/SP.s: Resources/SP.cpp.s
+
+.PHONY : Resources/SP.s
+
+# target to generate assembly for a file
+Resources/SP.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.s
+.PHONY : Resources/SP.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... Part-2/MapLoader.o"
 	@echo "... Part-2/MapLoader.i"
 	@echo "... Part-2/MapLoader.s"
+	@echo "... Resources/SP.o"
+	@echo "... Resources/SP.i"
+	@echo "... Resources/SP.s"
 .PHONY : help
 
 

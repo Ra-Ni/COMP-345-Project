@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o  -o COMP_345_Project 
+/usr/bin/c++  -g   CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.o  -o COMP_345_Project 
