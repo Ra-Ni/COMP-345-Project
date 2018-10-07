@@ -3,7 +3,7 @@
 #include "MonsterBoard.h"
 #include "Map.h"
 #include "Card.h"
-#include "Dice.h"
+#include "../Part-3/Dice.h"
 using namespace std;
 
 class Player 
