@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o"
   "CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o"
   "CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o"
-  "CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.o"
   "COMP_345_Project.pdb"
   "COMP_345_Project"
 )

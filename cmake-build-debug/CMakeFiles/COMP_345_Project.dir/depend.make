@@ -4,6 +4,7 @@
 CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o: ../Drivers/Tests.cpp
 CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o: ../Drivers/Tests.h
 CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o: ../Part-1/Map.h
+CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o: ../Part-2/MapLoader.h
 
 CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: ../Part-1/Map.cpp
 CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: ../Part-1/Map.h
@@ -11,7 +12,4 @@ CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: ../Part-1/Map.h
 CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-1/Map.h
 CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-2/MapLoader.cpp
 CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-2/MapLoader.h
-
-CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.o: ../Resources/SP.cpp
-CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.o: ../Resources/SP.h
 

@@ -4,76 +4,67 @@ using namespace std;
 
 MapLoader::MapLoader() {
     in = new ifstream();
-    size = new int();
-    buffer = nullptr;
     t = nullptr;
     nodes = new vector<string>();
 }
 
 MapLoader::~MapLoader() {
-    delete nodes;
-    nodes = nullptr;
     delete in;
     in = nullptr;
-    delete [] buffer;
-    buffer = nullptr;
-    delete size;
-    size = nullptr;
+    delete nodes;
+    nodes = nullptr;
+    delete t;
+    t = nullptr;
 }
 
 void MapLoader::open(const string file_path) {
-    int i = file_path.length() - 4;
-    assert(i > 0);
-
+    int i = static_cast<int>(file_path.length() - 4);
+    assert(i > 0 && "File path is too short");
     string ext = ".map";
     for(int j = 0 ; j < 4; j++) {
-        assert(file_path[i+j] == ext[j]);
+        assert(file_path[i+j] == ext[j] && "File is not of type '.map'");
     }
-
     path = file_path;
     *in = ifstream(path,ifstream::binary);
     assert(!(in->fail()));
 
 }
 
-void MapLoader::parse() {
+void MapLoader::load() {
     string flags[2] = {"<Territories>","<Map>"};
+    bool cond[2] = {false,false};
     string s;
-    bool flag1 = false;
-    bool flag2 = false;
-    while(!in->eof() && (!flag2 || !flag1)) {
+    int i = -1;
+    int x;
+    while(!in->eof() && (!(cond[0] && cond[1]))) {
         getline(*in,s);
-        if(!flag1 && s.compare(flags[0]) == 0) {
-            flag1 = true;
+        if(!cond[0] && s == flags[0]) {
+            cond[0] = true;
         }
-        else if(!flag2 && s.compare(flags[1]) == 0) {
-            flag2 = true;
+        else if(!cond[1] && s == flags[1]) {
+            cond[1] = true;
         }
-        else if(s.compare("") != 0) {
+        else if(!s.empty()) {
             nodes->push_back(s);
         }
     }
-    assert(flag1 && flag2);
+    assert(cond[0] && cond[1] && "Markers are missing in selected file");
     t = new Map<string>(nodes);
-    int i = -1;
     while(!in->eof()) {
         getline(*in,s);
         i = (int)s[0]-48;
         for(int j = 2 ; j < s.length(); j++) {
-            int x = (int)s[j]-48;
+            x = (int)s[j]-48;
+            assert(x >= 0 && x < nodes->size() && "File contains illegal link id");
             t->link(i,x);
         }
     }
-
-    t->print();
-    t->traverse();
-
 }
 
-//todo delete
-int main() {
-    MapLoader m;
-    m.open("./Resources/King\ Of\ New\ York.map") ;
-    m.parse();
+void MapLoader::traverse() {
+    t->traverse();
+}
 
+void MapLoader::print() {
+    t->print();
 }

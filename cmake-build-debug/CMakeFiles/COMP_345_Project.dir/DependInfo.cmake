@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp" "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o"
   "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp" "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o"
   "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp" "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o"
-  "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Resources/SP.cpp" "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/COMP_345_Project.dir/Resources/SP.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

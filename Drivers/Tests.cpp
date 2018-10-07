@@ -1,5 +1,8 @@
 #include "Tests.h"
+#include "../Part-1/Map.h"
+#include "../Part-2/MapLoader.h"
 #include <iostream>
+
 using namespace std;
 
 void Tests::map() {
@@ -30,5 +33,22 @@ void Tests::map() {
     m.link(3,1);
     cout << "\nCalling DFS algorithm:\n";
     m.traverse();
+}
 
+void Tests::maploader() {
+    cout << "Creating maploader object\n" << endl;
+    MapLoader m;
+    cout << "\nOpening file \'./Resources/King Of New York.map\'\n" << endl;
+    m.open("./Resources/King\ Of\ New\ York.map");
+    cout << "\nParsing file\n" << endl;
+    m.load();
+    cout << "\nFile read successfully. Map loaded done\n\nStats:\n" << endl;
+    m.print();
+    cout << "\nTraversing through DFS" << endl;
+    m.traverse();
+}
+
+int main() {
+    //Tests::map();
+    Tests::maploader();
 }

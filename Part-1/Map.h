@@ -10,7 +10,6 @@ struct Edge {
 
 template<typename T> class Map {
 private:
-    const int* len;
     std::vector<T>* nodes;
     std::vector<Edge>* edges;
     bool* visited;

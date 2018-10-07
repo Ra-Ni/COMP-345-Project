@@ -1,10 +1,9 @@
-#ifndef MAP_H
 #include "Map.h"
-#endif
 #include <algorithm>
 #include <string>
 #include <iostream>
 #include <cassert>
+using namespace std;
 
 bool Edge::comp_src(Edge e1, Edge e2) {
     return e1.src < e2.src;
@@ -14,32 +13,27 @@ bool Edge::comp_dest(Edge e1, Edge e2) {
     return e1.dest < e2.dest;
 }
 
-template<typename T>
-Map<T>::Map(std::vector<T>* vnodes) {
+template<typename T> Map<T>::Map(vector<T>* vnodes) {
     nodes = vnodes;
-    edges = new std::vector<Edge>;
+    edges = new vector<Edge>;
     visited = new bool[vnodes->size()];
 }
 
-template<typename T>
-Map<T>::~Map() {
+template<typename T> Map<T>::~Map() {
     delete edges;
     delete[] visited;
-    len = nullptr;
     visited = nullptr;
     edges = nullptr;
     nodes = nullptr;
 }
 
-template<typename T>
-void Map<T>::link(int from, int to) {
+template<typename T> void Map<T>::link(int from, int to) {
     assert(from < nodes->size() && from >= 0);
     assert(to < nodes->size() && to >= 0);
     edges->push_back(Edge{from, to});
 }
 
-template<typename T>
-void Map<T>::traverse() {
+template<typename T> void Map<T>::traverse() {
     bool flag = false;
     sort(edges->begin(), edges->end(), Edge::comp_dest);
     DFS(edges->at(0));
@@ -50,18 +44,17 @@ void Map<T>::traverse() {
         }
     }
     if (flag) {
-        std::cout << "Graph is not connected." << std::endl;
+        cout << "Graph is not connected." << endl;
     }
     else {
-        std::cout << "Graph is connected" << std::endl;
+        cout << "Graph is connected" << endl;
     }
 }
 
-template<typename T>
-void Map<T>::DFS(Edge start) {
+template<typename T> void Map<T>::DFS(Edge start) {
     visited[start.src] = true;
-    auto i = 0;
-    Edge m;
+    unsigned long i = 0;
+    Edge m{};
     while (i < edges->size()) {
         m = edges->at(i);
         if (!visited[m.src] && visited[m.dest]) {
@@ -71,8 +64,7 @@ void Map<T>::DFS(Edge start) {
     }
 }
 
-template<typename T>
-void Map<T>::print() {
+template<typename T> void Map<T>::print() {
     sort(edges->begin(), edges->end(), Edge::comp_src);
     auto itr = edges->begin();
     for(int i = 0 ; i < nodes->size() ; i++) {
@@ -85,8 +77,4 @@ void Map<T>::print() {
     }
 }
 
-template
-class Map<std::string>;
-
-template
-class Map<int>;
+template class Map<std::string>;
