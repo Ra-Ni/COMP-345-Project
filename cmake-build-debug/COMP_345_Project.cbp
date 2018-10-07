@@ -96,6 +96,12 @@
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h">
+			<Option target="COMP_345_Project"/>
+		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

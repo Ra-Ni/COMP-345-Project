@@ -7,7 +7,4 @@ public:
     static void map();
 };
 
-int main() {
-    Tests::map();
-}
 #endif //COMP_345_PROJECT_TESTS_H

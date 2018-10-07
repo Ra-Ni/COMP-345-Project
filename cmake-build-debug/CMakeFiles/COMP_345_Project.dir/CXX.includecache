@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp
-Tests.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h
-../Part-1/Map.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp
-Map.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
-
 /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
 string
 -
@@ -28,5 +16,21 @@ cassert
 vector
 -
 algorithm
+-
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp
+MapLoader.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
+../Part-1/Map.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
+dirent.h
+-
+fstream
+-
+iostream
+-
+cstring
 -
 

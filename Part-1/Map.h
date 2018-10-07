@@ -16,12 +16,12 @@ struct Edge {
 template<typename T> class Map {
 private:
     const int* len;
-    T* nodes;
+    vector<T>* nodes;
     vector<Edge>* edges;
     bool* visited;
     void DFS(Edge start);
 public:
-    explicit Map(T identifier[],const int &size);
+    explicit Map(vector<T>* vnodes);
     ~Map();
     void link(int from, int to);
     void traverse();

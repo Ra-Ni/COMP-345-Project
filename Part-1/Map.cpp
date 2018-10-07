@@ -9,11 +9,10 @@ bool Edge::comp_dest(Edge e1, Edge e2) {
 }
 
 template<typename T>
-Map<T>::Map(T *identifier, const int &size) {
-    len = &size;
-    nodes = &(*identifier);
-    edges = new vector<Edge>;
-    visited = new bool[*len];
+Map<T>::Map(std::vector<T>* vnodes) {
+    nodes = vnodes;
+    edges = new std::vector<Edge>;
+    visited = new bool[vnodes->size()];
 }
 
 template<typename T>
@@ -28,10 +27,9 @@ Map<T>::~Map() {
 
 template<typename T>
 void Map<T>::link(int from, int to) {
-    assert(from < *len && from >= 0);
-    assert(to < *len && to >= 0);
+    assert(from < nodes->size() && from >= 0);
+    assert(to < nodes->size() && to >= 0);
     edges->push_back(Edge{from, to});
-    edges->push_back(Edge{to, from});
 }
 
 template<typename T>
@@ -39,17 +37,17 @@ void Map<T>::traverse() {
     bool flag = false;
     sort(edges->begin(), edges->end(), Edge::comp_dest);
     DFS(edges->at(0));
-    for(int i = 0 ; i < *len ; i++) {
+    for(int i = 0 ; i < nodes->size() ; i++) {
         if (!visited[i]) {
             flag = true;
             break;
             }
     }
     if (flag) {
-        cout << "Graph is not connected." << endl;
+        std::cout << "Graph is not connected." << std::endl;
     }
     else {
-        cout << "Graph is connected" << endl;
+        std::cout << "Graph is connected" << std::endl;
     }
 }
 
@@ -71,13 +69,13 @@ template<typename T>
 void Map<T>::print() {
     sort(edges->begin(), edges->end(), Edge::comp_src);
     auto itr = edges->begin();
-    for(int i = 0 ; i < *len ; i++) {
-        cout << nodes[i];
+    for(int i = 0 ; i < nodes->size() ; i++) {
+        std::cout << (*nodes)[i];
         while (itr != edges->end() && itr->src == i) {
-            cout << " -> " << nodes[itr->dest];
+            std::cout << " -> " << (*nodes)[itr->dest];
             itr++;
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
