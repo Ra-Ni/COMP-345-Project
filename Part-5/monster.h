@@ -23,6 +23,12 @@ public:
             _victory_points(&victory_points) {
     }
 
+    ~monster() {
+        _name = nullptr;
+        _health = nullptr;
+        _victory_points = nullptr;
+    }
+
     unsigned char read_hp() {
         return *_health;
     }

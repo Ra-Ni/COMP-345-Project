@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/maptiles.cpp
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/controller.cpp
 stack.h
 /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/stack.h
 tile.h
@@ -15,6 +15,8 @@ monster.h
 /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h
 pthread.h
 -
+token.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/token.h
 
 /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h
 iostream
@@ -28,5 +30,9 @@ exception
 string
 -
 iostream
+-
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/token.h
+string
 -
 
