@@ -204,6 +204,33 @@ Part-2/MapLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s
 .PHONY : Part-2/MapLoader.cpp.s
 
+Part-5/maptiles.o: Part-5/maptiles.cpp.o
+
+.PHONY : Part-5/maptiles.o
+
+# target to build an object file
+Part-5/maptiles.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.o
+.PHONY : Part-5/maptiles.cpp.o
+
+Part-5/maptiles.i: Part-5/maptiles.cpp.i
+
+.PHONY : Part-5/maptiles.i
+
+# target to preprocess a source file
+Part-5/maptiles.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.i
+.PHONY : Part-5/maptiles.cpp.i
+
+Part-5/maptiles.s: Part-5/maptiles.cpp.s
+
+.PHONY : Part-5/maptiles.s
+
+# target to generate assembly for a file
+Part-5/maptiles.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.s
+.PHONY : Part-5/maptiles.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... Part-2/MapLoader.o"
 	@echo "... Part-2/MapLoader.i"
 	@echo "... Part-2/MapLoader.s"
+	@echo "... Part-5/maptiles.o"
+	@echo "... Part-5/maptiles.i"
+	@echo "... Part-5/maptiles.s"
 .PHONY : help
 
 

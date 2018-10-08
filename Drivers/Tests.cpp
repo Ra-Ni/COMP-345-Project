@@ -48,7 +48,3 @@ void Tests::maploader() {
     m.traverse();
 }
 
-int main() {
-    //Tests::map();
-    Tests::maploader();
-}

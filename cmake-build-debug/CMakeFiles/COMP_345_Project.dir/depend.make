@@ -13,3 +13,8 @@ CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-1/Map.h
 CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-2/MapLoader.cpp
 CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-2/MapLoader.h
 
+CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.o: ../Part-5/maptiles.cpp
+CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.o: ../Part-5/monster.h
+CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.o: ../Part-5/stack.h
+CMakeFiles/COMP_345_Project.dir/Part-5/maptiles.cpp.o: ../Part-5/tile.h
+

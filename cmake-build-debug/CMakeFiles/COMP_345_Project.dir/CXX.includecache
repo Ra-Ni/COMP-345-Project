@@ -6,43 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp
-Tests.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h
-../Part-1/Map.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
-../Part-2/MapLoader.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/maptiles.cpp
+stack.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/stack.h
+tile.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/tile.h
+monster.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h
+pthread.h
+-
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h
 iostream
 -
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp
-Map.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
-algorithm
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/stack.h
+exception
 -
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/tile.h
 string
 -
 iostream
--
-cassert
--
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
-vector
--
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp
-MapLoader.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
-cassert
--
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
-../Part-1/Map.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
-fstream
 -
 
