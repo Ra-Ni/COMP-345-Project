@@ -177,32 +177,32 @@ Part-1/Map.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s
 .PHONY : Part-1/Map.cpp.s
 
-Part-1/map_creator.o: Part-1/map_creator.cpp.o
+Part-1/map.o: Part-1/map.cpp.o
 
-.PHONY : Part-1/map_creator.o
+.PHONY : Part-1/map.o
 
 # target to build an object file
-Part-1/map_creator.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.o
-.PHONY : Part-1/map_creator.cpp.o
+Part-1/map.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o
+.PHONY : Part-1/map.cpp.o
 
-Part-1/map_creator.i: Part-1/map_creator.cpp.i
+Part-1/map.i: Part-1/map.cpp.i
 
-.PHONY : Part-1/map_creator.i
+.PHONY : Part-1/map.i
 
 # target to preprocess a source file
-Part-1/map_creator.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.i
-.PHONY : Part-1/map_creator.cpp.i
+Part-1/map.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.i
+.PHONY : Part-1/map.cpp.i
 
-Part-1/map_creator.s: Part-1/map_creator.cpp.s
+Part-1/map.s: Part-1/map.cpp.s
 
-.PHONY : Part-1/map_creator.s
+.PHONY : Part-1/map.s
 
 # target to generate assembly for a file
-Part-1/map_creator.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.s
-.PHONY : Part-1/map_creator.cpp.s
+Part-1/map.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.s
+.PHONY : Part-1/map.cpp.s
 
 Part-2/MapLoader.o: Part-2/MapLoader.cpp.o
 
@@ -300,9 +300,9 @@ help:
 	@echo "... Part-1/Map.o"
 	@echo "... Part-1/Map.i"
 	@echo "... Part-1/Map.s"
-	@echo "... Part-1/map_creator.o"
-	@echo "... Part-1/map_creator.i"
-	@echo "... Part-1/map_creator.s"
+	@echo "... Part-1/map.o"
+	@echo "... Part-1/map.i"
+	@echo "... Part-1/map.s"
 	@echo "... Part-2/MapLoader.o"
 	@echo "... Part-2/MapLoader.i"
 	@echo "... Part-2/MapLoader.s"

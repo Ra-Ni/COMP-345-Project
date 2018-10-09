@@ -3,7 +3,9 @@
 #endif
 
 #include <iostream>
-
+/**
+ * Contents of the game board
+ */
 struct constants {
     const std::string genericType[3] = {"Health", "Energy", "Victory"};
     const std::string buildingID[3] = {"Hospital", "Power Plant", "High Rise"};

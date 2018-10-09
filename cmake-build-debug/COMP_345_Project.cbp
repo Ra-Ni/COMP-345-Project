@@ -96,16 +96,19 @@
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map2.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map_creator.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/collections.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/constants.h">
@@ -115,9 +118,6 @@
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h">
-			<Option target="COMP_345_Project"/>
-		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/structures.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp">
