@@ -6,33 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/controller.cpp
-stack.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/stack.h
-tile.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/tile.h
-monster.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h
-pthread.h
--
-token.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/token.h
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.cpp
+core.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
 iostream
 -
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/stack.h
-exception
+fstream
 -
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/tile.h
+cstring
+-
 string
 -
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp
+Part-5/core.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
 iostream
 -
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/token.h
-string
+fstream
 -
 

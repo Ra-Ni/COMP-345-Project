@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Beta/serial.cpp">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Beta/serial.h">
+			<Option target="COMP_345_Project"/>
+		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
@@ -96,28 +102,40 @@
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map2.h">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map_creator.cpp">
+			<Option target="COMP_345_Project"/>
+		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/cards.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/collection.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/controller.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/monster.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/stack.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/da.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/tile.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/da.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/token.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/system.cpp">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/system.h">
+			<Option target="COMP_345_Project"/>
+		</Unit>
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/CMakeLists.txt">

@@ -123,6 +123,33 @@ COMP_345_Project/fast:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/build
 .PHONY : COMP_345_Project/fast
 
+Beta/serial.o: Beta/serial.cpp.o
+
+.PHONY : Beta/serial.o
+
+# target to build an object file
+Beta/serial.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.o
+.PHONY : Beta/serial.cpp.o
+
+Beta/serial.i: Beta/serial.cpp.i
+
+.PHONY : Beta/serial.i
+
+# target to preprocess a source file
+Beta/serial.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.i
+.PHONY : Beta/serial.cpp.i
+
+Beta/serial.s: Beta/serial.cpp.s
+
+.PHONY : Beta/serial.s
+
+# target to generate assembly for a file
+Beta/serial.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.s
+.PHONY : Beta/serial.cpp.s
+
 Drivers/Tests.o: Drivers/Tests.cpp.o
 
 .PHONY : Drivers/Tests.o
@@ -177,6 +204,33 @@ Part-1/Map.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s
 .PHONY : Part-1/Map.cpp.s
 
+Part-1/map_creator.o: Part-1/map_creator.cpp.o
+
+.PHONY : Part-1/map_creator.o
+
+# target to build an object file
+Part-1/map_creator.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.o
+.PHONY : Part-1/map_creator.cpp.o
+
+Part-1/map_creator.i: Part-1/map_creator.cpp.i
+
+.PHONY : Part-1/map_creator.i
+
+# target to preprocess a source file
+Part-1/map_creator.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.i
+.PHONY : Part-1/map_creator.cpp.i
+
+Part-1/map_creator.s: Part-1/map_creator.cpp.s
+
+.PHONY : Part-1/map_creator.s
+
+# target to generate assembly for a file
+Part-1/map_creator.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.s
+.PHONY : Part-1/map_creator.cpp.s
+
 Part-2/MapLoader.o: Part-2/MapLoader.cpp.o
 
 .PHONY : Part-2/MapLoader.o
@@ -204,32 +258,113 @@ Part-2/MapLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s
 .PHONY : Part-2/MapLoader.cpp.s
 
-Part-5/controller.o: Part-5/controller.cpp.o
+Part-5/core.o: Part-5/core.cpp.o
 
-.PHONY : Part-5/controller.o
+.PHONY : Part-5/core.o
 
 # target to build an object file
-Part-5/controller.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/controller.cpp.o
-.PHONY : Part-5/controller.cpp.o
+Part-5/core.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o
+.PHONY : Part-5/core.cpp.o
 
-Part-5/controller.i: Part-5/controller.cpp.i
+Part-5/core.i: Part-5/core.cpp.i
 
-.PHONY : Part-5/controller.i
+.PHONY : Part-5/core.i
 
 # target to preprocess a source file
-Part-5/controller.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/controller.cpp.i
-.PHONY : Part-5/controller.cpp.i
+Part-5/core.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.i
+.PHONY : Part-5/core.cpp.i
 
-Part-5/controller.s: Part-5/controller.cpp.s
+Part-5/core.s: Part-5/core.cpp.s
 
-.PHONY : Part-5/controller.s
+.PHONY : Part-5/core.s
 
 # target to generate assembly for a file
-Part-5/controller.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/controller.cpp.s
-.PHONY : Part-5/controller.cpp.s
+Part-5/core.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.s
+.PHONY : Part-5/core.cpp.s
+
+Part-5/da.o: Part-5/da.cpp.o
+
+.PHONY : Part-5/da.o
+
+# target to build an object file
+Part-5/da.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.o
+.PHONY : Part-5/da.cpp.o
+
+Part-5/da.i: Part-5/da.cpp.i
+
+.PHONY : Part-5/da.i
+
+# target to preprocess a source file
+Part-5/da.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.i
+.PHONY : Part-5/da.cpp.i
+
+Part-5/da.s: Part-5/da.cpp.s
+
+.PHONY : Part-5/da.s
+
+# target to generate assembly for a file
+Part-5/da.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.s
+.PHONY : Part-5/da.cpp.s
+
+Part-5/system.o: Part-5/system.cpp.o
+
+.PHONY : Part-5/system.o
+
+# target to build an object file
+Part-5/system.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.o
+.PHONY : Part-5/system.cpp.o
+
+Part-5/system.i: Part-5/system.cpp.i
+
+.PHONY : Part-5/system.i
+
+# target to preprocess a source file
+Part-5/system.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.i
+.PHONY : Part-5/system.cpp.i
+
+Part-5/system.s: Part-5/system.cpp.s
+
+.PHONY : Part-5/system.s
+
+# target to generate assembly for a file
+Part-5/system.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.s
+.PHONY : Part-5/system.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -240,18 +375,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... COMP_345_Project"
+	@echo "... Beta/serial.o"
+	@echo "... Beta/serial.i"
+	@echo "... Beta/serial.s"
 	@echo "... Drivers/Tests.o"
 	@echo "... Drivers/Tests.i"
 	@echo "... Drivers/Tests.s"
 	@echo "... Part-1/Map.o"
 	@echo "... Part-1/Map.i"
 	@echo "... Part-1/Map.s"
+	@echo "... Part-1/map_creator.o"
+	@echo "... Part-1/map_creator.i"
+	@echo "... Part-1/map_creator.s"
 	@echo "... Part-2/MapLoader.o"
 	@echo "... Part-2/MapLoader.i"
 	@echo "... Part-2/MapLoader.s"
-	@echo "... Part-5/controller.o"
-	@echo "... Part-5/controller.i"
-	@echo "... Part-5/controller.s"
+	@echo "... Part-5/core.o"
+	@echo "... Part-5/core.i"
+	@echo "... Part-5/core.s"
+	@echo "... Part-5/da.o"
+	@echo "... Part-5/da.i"
+	@echo "... Part-5/da.s"
+	@echo "... Part-5/system.o"
+	@echo "... Part-5/system.i"
+	@echo "... Part-5/system.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
