@@ -26,5 +26,6 @@ struct token {
 struct card {
     char _id;
     char _description;
+    char _cost;
     char _effect;
 };
