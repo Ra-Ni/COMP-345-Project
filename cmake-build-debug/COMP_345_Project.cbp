@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Beta/serial.cpp">
-			<Option target="COMP_345_Project"/>
-		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Beta/serial.h">
-			<Option target="COMP_345_Project"/>
-		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
@@ -114,7 +108,7 @@
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/collection.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/constants.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.cpp">
@@ -123,16 +117,7 @@
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/da.cpp">
-			<Option target="COMP_345_Project"/>
-		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/da.h">
-			<Option target="COMP_345_Project"/>
-		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/system.cpp">
-			<Option target="COMP_345_Project"/>
-		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/system.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/structures.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp">

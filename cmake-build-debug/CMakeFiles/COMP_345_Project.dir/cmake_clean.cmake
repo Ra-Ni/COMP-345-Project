@@ -3,11 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o"
   "CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o"
   "CMakeFiles/COMP_345_Project.dir/Part-1/map_creator.cpp.o"
-  "CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.o"
   "CMakeFiles/COMP_345_Project.dir/main.cpp.o"
   "CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o"
-  "CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.o"
-  "CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.o"
   "COMP_345_Project.pdb"
   "COMP_345_Project"
 )

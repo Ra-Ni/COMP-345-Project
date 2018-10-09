@@ -6,25 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.cpp
-core.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp
+Tests.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h
+../Part-1/Map.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
+../Part-2/MapLoader.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
+../Part-5/core.h
 /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
 iostream
 -
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
+vector
+-
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h
+../Part-1/Map.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h
 fstream
--
-cstring
--
-string
 -
 
 /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
-
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp
-Part-5/core.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
-iostream
--
-fstream
--
 

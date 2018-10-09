@@ -1,139 +1,201 @@
 #include "core.h"
+#include "structures.h"
+#include "constants.h"
 #include <fstream>
 #include <cstring>
 #include <string>
+
 using namespace std;
+
+
+core::~core() {
+    delete[] monsters;
+    delete[] buildings;
+    delete[] units;
+    delete[] tokens;
+    delete[] cards;
+    monsters = nullptr;
+    buildings = nullptr;
+    units = nullptr;
+    tokens = nullptr;
+    cards = nullptr;
+}
 
 void core::load() {
     ifstream ifs("./Resources/core.so", ios::binary);
-    ifs.read((char *) &_monsters, sizeof(_monsters));
-    ifs.read((char *) &_buildings, sizeof(_buildings));
-    ifs.read((char *) &_cards, sizeof(_cards));
-    ifs.read((char *) &_units, sizeof(_units));
-    ifs.read((char *) &_tokens, sizeof(_tokens));
+    ifs.read((char *) &sizes, sizeof(sizes));
+
+    monsters = new monster[sizes[0]];
+    buildings = new tile[sizes[1]];
+    units = new tile[sizes[2]];
+    tokens = new token[sizes[3]];
+    cards = new card[sizes[4]];
+
+    for (int i = 0; i < sizes[0]; i++) {
+        ifs.read((char *) &monsters[i], sizeof(monsters));
+    }
+    for (int i = 0; i < sizes[1]; i++) {
+        ifs.read((char *) &buildings[i], sizeof(buildings));
+    }
+    for (int i = 0; i < sizes[2]; i++) {
+        ifs.read((char *) &units[i], sizeof(units));
+    }
+    for (int i = 0; i < sizes[3]; i++) {
+        ifs.read((char *) &tokens[i], sizeof(tokens));
+    }
+    for (int i = 0; i < sizes[4]; i++) {
+        ifs.read((char *) &cards[i], sizeof(cards));
+    }
     ifs.close();
 }
 
 void core::save() {
     ofstream ofs("./Resources/core.so", ios::binary);
-    ofs.write((char *) &_monsters, sizeof(_monsters));
-    ofs.write((char *) &_buildings, sizeof(_buildings));
-    ofs.write((char *) &_cards, sizeof(_cards));
-    ofs.write((char *) &_units, sizeof(_units));
-    ofs.write((char *) &_tokens, sizeof(_tokens));
+    ofs.write((char *) &sizes, sizeof(sizes));
+
+    for (int i = 0; i < sizes[0]; i++) {
+        if (&monsters[i] != nullptr) {
+            ofs.write((char *) &monsters[i], sizeof(monsters));
+        }
+    }
+    for (int i = 0; i < sizes[1]; i++) {
+        if (&buildings[i] != nullptr) {
+            ofs.write((char *) &buildings[i], sizeof(buildings));
+        }
+    }
+    for (int i = 0; i < sizes[2]; i++) {
+        ofs.write((char *) &units[i], sizeof(units));
+    }
+    for (int i = 0; i < sizes[3]; i++) {
+        if (&tokens[i] != nullptr) {
+            ofs.write((char *) &tokens[i], sizeof(tokens));
+        }
+    }
+    for (int i = 0; i < sizes[4]; i++) {
+        if (&cards[i] != nullptr) {
+            ofs.write((char *) &cards[i], sizeof(cards));
+        }
+    }
     ofs.close();
 }
 
 void core::reset() {
-    char i = 0;
-    for (auto &monster : _monsters) {
-        monster._id = i++;
-        monster._victory_points = 0;
-        monster._health = 10;
+
+    sizes[0] = 6;
+    sizes[1] = 9;
+    sizes[2] = 3;
+    sizes[3] = 4;
+    sizes[4] = 66;
+
+    monsters = new monster[sizes[0]];
+    buildings = new tile[sizes[1]];
+    units = new tile[sizes[2]];
+    tokens = new token[sizes[3]];
+    cards = new card[sizes[4]];
+
+    for (char i = 0; i < sizes[0]; i++) {
+        monsters[i]._id = i;
+        monsters[i]._victory_points = 0;
+        monsters[i]._health = 10;
+        monsters[i]._taken = false;
     }
-    i = 0;
-    for (auto &building : _buildings) {
-        building._id = (char)(i%3);
-        building._type = building._id;
-        building._reward = (char)((i/3) + 1);
-        building._durability = building._reward;
-        building._count = 5;
-        i++;
+    for (char i = 0; i < sizes[1]; i++) {
+        buildings[i]._id = (char) (i % 3);
+        buildings[i]._type = (char) (i % 3);
+        buildings[i]._reward = (char) ((i / 3) + 1);
+        buildings[i]._durability = (char) ((i / 3) + 1);
+        buildings[i]._count = 5;
     }
-    i = 0;
-    for (auto &unit : _units) {
-        unit._id = i;
-        unit._type = unit._id;
-        unit._durability = i == 0 ? (char)1 : (char)(i + 2);
-        unit._count = 0;
-        i++;
+
+    for (char i = 0; i < sizes[2]; i++) {
+        units[i]._id = i;
+        units[i]._type = i;
+        units[i]._reward = (char) (i + 1);
+        units[i]._durability = i == 0 ? (char) 1 : (char) (i + 2);
+        units[i]._count = 0;
     }
-    i = 0;
-    for(auto &token : _tokens) {
-        token._id = i;
-        if(i < 2) {
-            token._count = 13;
+    for (char i = 0; i < sizes[3]; i++) {
+        tokens[i]._id = i;
+        if (i < 2) {
+            tokens[i]._count = 13;
+        } else {
+            tokens[i]._count = i == 3 ? (char) 5 : (char) 15;
         }
-        else {
-            token._count = i == 3 ? (char)5 : (char)15;
-        }
-        i++;
     }
-    i = 0;
-    for(auto &card : _cards) {
-        card._id = i++;
-        card._effect = card._id;
-        card._description = card._id;
+    for (char i = 0; i < sizes[4]; i++) {
+        cards[i]._id = i;
+        cards[i]._effect = i;
+        cards[i]._description = i;
     }
     save();
 }
 
 
-/*
-void system::print() {
+void core::print() {
+    constants translations;
     cout << "MONSTERS\n";
-    for (auto &_monster : _monsters) {
+    for (char i = 0; i < sizes[0]; i++) {
         cout << "\tName: "
-             << _monster._id
+             << translations.monsterID[monsters[i]._id]
              << "\n\t\tHealth: "
-             << (int) _monster._health
+             << (int) monsters[i]._health
              << "\n\t\tVictory Points: "
-             << (int) _monster._victory_points
+             << (int) monsters[i]._victory_points
              << '\n';
     }
     cout << "\nBUILDINGS\n";
-    for (auto &tile : _buildings) {
+    for (char i = 0; i < sizes[1]; i++) {
         cout << "\tName: "
-             << tile._id
+             << translations.buildingID[buildings[i]._id]
              << "\n\t\tType: "
-             << tile._type
+             << translations.genericType[buildings[i]._type]
              << "\n\t\tDurability: "
-             << (int) tile._durability
+             << (int) buildings[i]._durability
              << "\n\t\tReward: "
              << '+'
-             << (int) tile._reward
+             << (int) buildings[i]._reward
              << ' '
-             << tile._type
+             << translations.genericType[buildings[i]._type]
              << "\n\t\tCount: "
-             << (int) tile._count
+             << (int) buildings[i]._count
              << '\n';
-        }
+    }
     cout << "\nUNITS\n";
-    for (auto &tile : _units) {
+    for (char i = 0; i < sizes[2]; i++) {
         cout << "\tName: "
-             << tile._id
+             << translations.unitID[units[i]._id]
              << "\n\t\tType: "
-             << tile._type
+             << translations.genericType[units[i]._type]
              << "\n\t\tDurability: "
-             << (int) tile._durability
+             << (int) units[i]._durability
              << "\n\t\tReward: "
              << '+'
-             << (int) tile._reward
+             << (int) units[i]._reward
              << ' '
-             << tile._type
+             << translations.genericType[units[i]._type]
              << "\n\t\tCount: "
-             << (int) tile._count
+             << (int) units[i]._count
              << '\n';
     }
     cout << "\nTOKENS\n";
-    for(auto &token : _tokens) {
+    for (char i = 0; i < sizes[3]; i++) {
         cout << "\tName: "
-             << token._id
+             << translations.tokenID[tokens[i]._id]
              << "\n\t\tCount: "
-             << (int)token._count
+             << (int) tokens[i]._count
              << '\n';
     }
     cout << "\nCARDS\n"
          << "\tTBD";
 
-    for(auto &card : _cards) {
+    for (char i = 0; i < sizes[4]; i++) {
         cout << "\tName: "
-             << card._id
+             << cards[i]._id
              << "\n\t\tDescription: "
-             << card._description
+             << cards[i]._description
              << "\n\t\tEffect: "
-             << card._effect
+             << cards[i]._effect
              << '\n';
     }
-    */
 
+}

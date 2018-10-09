@@ -4,21 +4,23 @@
 #include "Part-5/core.h"
 #include <iostream>
 #include <fstream>
+#include "./Drivers/Tests.h"
 using namespace std;
 
 int main() {
-    core c{};
-    c.load();
+    Tests::part5();
+
 }
+
 /*
 int main() {
-    monster m{};
-    strcpy(m._id,"Sheriff");
-    m._victory_points = 0;
-    m._health = 10;
+    monster monsters{};
+    strcpy(monsters._id,"Sheriff");
+    monsters._victory_points = 0;
+    monsters._health = 10;
 
     ofstream ofs("monster.dat", ios::binary);
-    ofs.write((char *)&m, sizeof(m));
+    ofs.write((char *)&monsters, sizeof(monsters));
     ofs.close();
 
     monster m2{};

@@ -1,42 +1,27 @@
-#ifndef COMP_345_PROJECT_ARCHIVE_H
-#define COMP_345_PROJECT_ARCHIVE_H
-#include <iostream>
+#ifndef COMP_345_PROJECT_CPPPSA_H
+#define COMP_345_PROJECT_CPPPSA_H
 #endif
 
-    struct monster {
-        char _id;
-        char _health;
-        char _victory_points;
-    };
-
-    struct tile {
-        char _id;
-        char _type;
-        char _reward;
-        char _durability;
-        char _count;
-    };
-
-    struct token {
-        char _id;
-        char _count;
-    };
-
-    struct card {
-        char _id;
-        char _description;
-        char _effect;
-    };
+struct monster;
+struct tile;
+struct token;
+struct card;
 
 struct core {
-    monster _monsters[6];
-    tile _buildings[9];
-    tile _units[3];
-    token _tokens[4];
-    card _cards[66]; //how many distinct cards?
-public:
-    void load();
-    void save();
-    void reset();
-};
+    char sizes[6] = {6, 9, 3, 4, 66};
+    monster *monsters; //6
+    tile *buildings; //9
+    tile *units; //3
+    token *tokens; //4
+    card *cards; //66
 
+    ~core();
+
+    void load();
+
+    void save();
+
+    void reset();
+
+    void print();
+};

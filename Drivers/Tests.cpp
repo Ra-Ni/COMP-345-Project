@@ -1,6 +1,7 @@
 #include "Tests.h"
 #include "../Part-1/Map.h"
 #include "../Part-2/MapLoader.h"
+#include "../Part-5/core.h"
 #include <iostream>
 
 using namespace std;
@@ -46,5 +47,13 @@ void Tests::maploader() {
     m.print();
     cout << "\nTraversing through DFS" << endl;
     m.traverse();
+}
+
+void Tests::part5() {
+    cout << "Creating the monsters, tokens, cards, and tiles...\n";
+    core c;
+    c.reset();
+    c.print();
+
 }
 

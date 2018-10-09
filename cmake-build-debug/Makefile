@@ -123,33 +123,6 @@ COMP_345_Project/fast:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/build
 .PHONY : COMP_345_Project/fast
 
-Beta/serial.o: Beta/serial.cpp.o
-
-.PHONY : Beta/serial.o
-
-# target to build an object file
-Beta/serial.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.o
-.PHONY : Beta/serial.cpp.o
-
-Beta/serial.i: Beta/serial.cpp.i
-
-.PHONY : Beta/serial.i
-
-# target to preprocess a source file
-Beta/serial.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.i
-.PHONY : Beta/serial.cpp.i
-
-Beta/serial.s: Beta/serial.cpp.s
-
-.PHONY : Beta/serial.s
-
-# target to generate assembly for a file
-Beta/serial.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Beta/serial.cpp.s
-.PHONY : Beta/serial.cpp.s
-
 Drivers/Tests.o: Drivers/Tests.cpp.o
 
 .PHONY : Drivers/Tests.o
@@ -285,60 +258,6 @@ Part-5/core.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.s
 .PHONY : Part-5/core.cpp.s
 
-Part-5/da.o: Part-5/da.cpp.o
-
-.PHONY : Part-5/da.o
-
-# target to build an object file
-Part-5/da.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.o
-.PHONY : Part-5/da.cpp.o
-
-Part-5/da.i: Part-5/da.cpp.i
-
-.PHONY : Part-5/da.i
-
-# target to preprocess a source file
-Part-5/da.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.i
-.PHONY : Part-5/da.cpp.i
-
-Part-5/da.s: Part-5/da.cpp.s
-
-.PHONY : Part-5/da.s
-
-# target to generate assembly for a file
-Part-5/da.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/da.cpp.s
-.PHONY : Part-5/da.cpp.s
-
-Part-5/system.o: Part-5/system.cpp.o
-
-.PHONY : Part-5/system.o
-
-# target to build an object file
-Part-5/system.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.o
-.PHONY : Part-5/system.cpp.o
-
-Part-5/system.i: Part-5/system.cpp.i
-
-.PHONY : Part-5/system.i
-
-# target to preprocess a source file
-Part-5/system.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.i
-.PHONY : Part-5/system.cpp.i
-
-Part-5/system.s: Part-5/system.cpp.s
-
-.PHONY : Part-5/system.s
-
-# target to generate assembly for a file
-Part-5/system.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-5/system.cpp.s
-.PHONY : Part-5/system.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -375,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... COMP_345_Project"
-	@echo "... Beta/serial.o"
-	@echo "... Beta/serial.i"
-	@echo "... Beta/serial.s"
 	@echo "... Drivers/Tests.o"
 	@echo "... Drivers/Tests.i"
 	@echo "... Drivers/Tests.s"
@@ -393,12 +309,6 @@ help:
 	@echo "... Part-5/core.o"
 	@echo "... Part-5/core.i"
 	@echo "... Part-5/core.s"
-	@echo "... Part-5/da.o"
-	@echo "... Part-5/da.i"
-	@echo "... Part-5/da.s"
-	@echo "... Part-5/system.o"
-	@echo "... Part-5/system.i"
-	@echo "... Part-5/system.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
