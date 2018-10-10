@@ -1,5 +1,4 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 
 #include <string>
 using namespace std;
@@ -35,7 +34,7 @@ public:
 		*monster = *m;
 
 	};
-#endif
+
 	
 	
 
