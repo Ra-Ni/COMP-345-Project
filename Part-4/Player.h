@@ -1,9 +1,4 @@
-#pragma once
 #include <string>
-#include "MonsterBoard.h"
-#include "Map.h"
-#include "Card.h"
-#include "../Part-3/Dice.h"
 using namespace std;
 
 class Player 
