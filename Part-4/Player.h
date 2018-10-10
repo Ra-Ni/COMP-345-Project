@@ -34,7 +34,10 @@ public:
 		*currentZone = *cz;
 		*monster = *m;
 
-	}
+	};
+#endif
+	
+	
 
 };
 
