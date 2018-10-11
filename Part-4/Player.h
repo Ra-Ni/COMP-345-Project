@@ -34,14 +34,8 @@ public:
 public:
 	Player();
 	~Player();
-	/*Player(char monsterId, char graphmapId , char tokensId) {
-		monster = monsterId;
-		currentZone = graphmapId;
-		tokens= tokenId;  
-		
-		cards=null;
-		//playerDice?!
-	};*/
+	/*Player(char monsterId, char graphmapId , char tokensId) {}
+		*/
 
 	
 	
