@@ -1,22 +1,22 @@
 #include "Player.h"
-#include "MapLoader.h"
-#include "Map.h"
-#include "Dice.h"
-#include "DiceFacility.h" 
-#include "collections.h"
-#include "constants.h"
-
-#include <iostream>
-#include <string>
-usng namespace std;
+//#include core.h
+using namespace std;
 
 
 
+class Player:graphmap{
 Player::Player()
 {
 }
-
+Player::Player(monster m, *nodes cz, DiceFacility df, token* t) {
+	monster = m;
+	currentZone = cz;
+	df = df;
+	token* = t;
+	
+}
 
 Player::~Player()
 {
 }
+};
