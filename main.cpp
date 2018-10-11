@@ -144,7 +144,30 @@ namespace part3 {
 
     }
 }
+// ***************************************************
+/* namespace part4 {
+ int main() {
+cout<< "Please enter the number of players:<< endl;
+char numOfPlayers;
+cin>> numOfPlayers;
+char _monsterId, _graphmapId , _tokenId;
 
+for (int i=0; i<=numOfPlayers; i++){
+        cout << "Creating a player object" << endl;
+cout << " Please select a monster id for the player" << i <<": (should be a number between 1 and 6, 1= SHERRIF, 2= DRAKONIS, 3= CAPTAIN FISH, 4= MANTIS, 5= ROB, 6= KONG)" << endl;
+                cin >> _monsterId;       
+cout << " Please select a region for the player" << i <<": (should be a number between 1 and ?, 1=" << endl;
+		cin>> _tokenID 
+cout << " Please select a token for the player" << i <<": (should be a number between 1 and 4, 1=Web, 2=Jynx, 3=Souvenir, 4=Carpace)" << endl;
+		cin>> _tokenID 
+Player p[i]= Player(_monsterId, _graphId, _tokenId);
+    }
+}
+
+
+}
+//****************************************************
+*/
 namespace part5 {
     int main() {
         cout << "Creating core object" << endl;
