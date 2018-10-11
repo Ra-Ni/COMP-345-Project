@@ -4,6 +4,7 @@
 using namespace std;
 
 class graphmap;
+// struct monster,
 struct card;
 struct token;
 class ClsDice;
@@ -12,10 +13,10 @@ class ClsDice;
 class Player 
 {
 /*
- 	string const name;
+ 	monster* monster;
 	graphmap* currentZone;
 	card* cards;
-	token* token;
+	token* tokens;
 	ClsDice* playerDice;
 */
 
@@ -33,11 +34,13 @@ public:
 public:
 	Player();
 	~Player();
-	/*Player(string n, graphmap *cz, MonsterBoard *m) {
-		name = n;
-		*currentZone = *cz;
-		*monster = *m;
-
+	/*Player(char monsterId, char graphmapId , char tokensId) {
+		monster = monsterId;
+		currentZone = graphmapId;
+		tokens= tokenId;  
+		
+		cards=null;
+		//playerDice?!
 	};*/
 
 	
