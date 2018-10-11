@@ -1,6 +1,3 @@
-//
-// Created by mansoureh on 10/9/2018.
-//
 #include "ClsDice.h"
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
