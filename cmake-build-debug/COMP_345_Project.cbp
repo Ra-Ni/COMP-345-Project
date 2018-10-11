@@ -84,28 +84,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/graphmap.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/graphmap.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/collections.h">

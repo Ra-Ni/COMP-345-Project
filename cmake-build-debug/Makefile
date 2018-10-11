@@ -123,113 +123,113 @@ COMP_345_Project/fast:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/build
 .PHONY : COMP_345_Project/fast
 
-Drivers/Tests.o: Drivers/Tests.cpp.o
+Part-1/graphmap.o: Part-1/graphmap.cpp.o
 
-.PHONY : Drivers/Tests.o
-
-# target to build an object file
-Drivers/Tests.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o
-.PHONY : Drivers/Tests.cpp.o
-
-Drivers/Tests.i: Drivers/Tests.cpp.i
-
-.PHONY : Drivers/Tests.i
-
-# target to preprocess a source file
-Drivers/Tests.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.i
-.PHONY : Drivers/Tests.cpp.i
-
-Drivers/Tests.s: Drivers/Tests.cpp.s
-
-.PHONY : Drivers/Tests.s
-
-# target to generate assembly for a file
-Drivers/Tests.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.s
-.PHONY : Drivers/Tests.cpp.s
-
-Part-1/Map.o: Part-1/Map.cpp.o
-
-.PHONY : Part-1/Map.o
+.PHONY : Part-1/graphmap.o
 
 # target to build an object file
-Part-1/Map.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o
-.PHONY : Part-1/Map.cpp.o
+Part-1/graphmap.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o
+.PHONY : Part-1/graphmap.cpp.o
 
-Part-1/Map.i: Part-1/Map.cpp.i
+Part-1/graphmap.i: Part-1/graphmap.cpp.i
 
-.PHONY : Part-1/Map.i
+.PHONY : Part-1/graphmap.i
 
 # target to preprocess a source file
-Part-1/Map.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i
-.PHONY : Part-1/Map.cpp.i
+Part-1/graphmap.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.i
+.PHONY : Part-1/graphmap.cpp.i
 
-Part-1/Map.s: Part-1/Map.cpp.s
+Part-1/graphmap.s: Part-1/graphmap.cpp.s
 
-.PHONY : Part-1/Map.s
+.PHONY : Part-1/graphmap.s
 
 # target to generate assembly for a file
-Part-1/Map.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s
-.PHONY : Part-1/Map.cpp.s
+Part-1/graphmap.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.s
+.PHONY : Part-1/graphmap.cpp.s
 
-Part-1/map.o: Part-1/map.cpp.o
+Part-2/maploader.o: Part-2/maploader.cpp.o
 
-.PHONY : Part-1/map.o
+.PHONY : Part-2/maploader.o
 
 # target to build an object file
-Part-1/map.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o
-.PHONY : Part-1/map.cpp.o
+Part-2/maploader.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o
+.PHONY : Part-2/maploader.cpp.o
 
-Part-1/map.i: Part-1/map.cpp.i
+Part-2/maploader.i: Part-2/maploader.cpp.i
 
-.PHONY : Part-1/map.i
+.PHONY : Part-2/maploader.i
 
 # target to preprocess a source file
-Part-1/map.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.i
-.PHONY : Part-1/map.cpp.i
+Part-2/maploader.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.i
+.PHONY : Part-2/maploader.cpp.i
 
-Part-1/map.s: Part-1/map.cpp.s
+Part-2/maploader.s: Part-2/maploader.cpp.s
 
-.PHONY : Part-1/map.s
+.PHONY : Part-2/maploader.s
 
 # target to generate assembly for a file
-Part-1/map.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.s
-.PHONY : Part-1/map.cpp.s
+Part-2/maploader.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.s
+.PHONY : Part-2/maploader.cpp.s
 
-Part-2/MapLoader.o: Part-2/MapLoader.cpp.o
+Part-3/ClsDice.o: Part-3/ClsDice.cpp.o
 
-.PHONY : Part-2/MapLoader.o
+.PHONY : Part-3/ClsDice.o
 
 # target to build an object file
-Part-2/MapLoader.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o
-.PHONY : Part-2/MapLoader.cpp.o
+Part-3/ClsDice.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o
+.PHONY : Part-3/ClsDice.cpp.o
 
-Part-2/MapLoader.i: Part-2/MapLoader.cpp.i
+Part-3/ClsDice.i: Part-3/ClsDice.cpp.i
 
-.PHONY : Part-2/MapLoader.i
+.PHONY : Part-3/ClsDice.i
 
 # target to preprocess a source file
-Part-2/MapLoader.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.i
-.PHONY : Part-2/MapLoader.cpp.i
+Part-3/ClsDice.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.i
+.PHONY : Part-3/ClsDice.cpp.i
 
-Part-2/MapLoader.s: Part-2/MapLoader.cpp.s
+Part-3/ClsDice.s: Part-3/ClsDice.cpp.s
 
-.PHONY : Part-2/MapLoader.s
+.PHONY : Part-3/ClsDice.s
 
 # target to generate assembly for a file
-Part-2/MapLoader.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s
-.PHONY : Part-2/MapLoader.cpp.s
+Part-3/ClsDice.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.s
+.PHONY : Part-3/ClsDice.cpp.s
+
+Part-4/Player.o: Part-4/Player.cpp.o
+
+.PHONY : Part-4/Player.o
+
+# target to build an object file
+Part-4/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o
+.PHONY : Part-4/Player.cpp.o
+
+Part-4/Player.i: Part-4/Player.cpp.i
+
+.PHONY : Part-4/Player.i
+
+# target to preprocess a source file
+Part-4/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.i
+.PHONY : Part-4/Player.cpp.i
+
+Part-4/Player.s: Part-4/Player.cpp.s
+
+.PHONY : Part-4/Player.s
+
+# target to generate assembly for a file
+Part-4/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.s
+.PHONY : Part-4/Player.cpp.s
 
 Part-5/core.o: Part-5/core.cpp.o
 
@@ -294,18 +294,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... COMP_345_Project"
-	@echo "... Drivers/Tests.o"
-	@echo "... Drivers/Tests.i"
-	@echo "... Drivers/Tests.s"
-	@echo "... Part-1/Map.o"
-	@echo "... Part-1/Map.i"
-	@echo "... Part-1/Map.s"
-	@echo "... Part-1/map.o"
-	@echo "... Part-1/map.i"
-	@echo "... Part-1/map.s"
-	@echo "... Part-2/MapLoader.o"
-	@echo "... Part-2/MapLoader.i"
-	@echo "... Part-2/MapLoader.s"
+	@echo "... Part-1/graphmap.o"
+	@echo "... Part-1/graphmap.i"
+	@echo "... Part-1/graphmap.s"
+	@echo "... Part-2/maploader.o"
+	@echo "... Part-2/maploader.i"
+	@echo "... Part-2/maploader.s"
+	@echo "... Part-3/ClsDice.o"
+	@echo "... Part-3/ClsDice.i"
+	@echo "... Part-3/ClsDice.s"
+	@echo "... Part-4/Player.o"
+	@echo "... Part-4/Player.i"
+	@echo "... Part-4/Player.s"
 	@echo "... Part-5/core.o"
 	@echo "... Part-5/core.i"
 	@echo "... Part-5/core.s"

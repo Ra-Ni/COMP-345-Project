@@ -57,57 +57,57 @@ include CMakeFiles/COMP_345_Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/COMP_345_Project.dir/flags.make
 
-CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o: ../Part-1/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp"
+CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
+CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o: ../Part-1/graphmap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/graphmap.cpp"
 
-CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp" > CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.i
+CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/graphmap.cpp" > CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.i
 
-CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/Map.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.s
+CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/graphmap.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.s
 
-CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o: ../Drivers/Tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp"
+CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
+CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o: ../Part-2/maploader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.cpp"
 
-CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp" > CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.i
+CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.cpp" > CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.i
 
-CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Drivers/Tests.cpp" -o CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.s
+CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.s
 
-CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o: ../Part-2/MapLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp"
+CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
+CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o: ../Part-3/ClsDice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.cpp"
 
-CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp" > CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.i
+CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.cpp" > CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.i
 
-CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/MapLoader.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.s
+CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.s
 
-CMakeFiles/COMP_345_Project.dir/main.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COMP_345_Project.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/main.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp"
+CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
+CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o: ../Part-4/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp"
 
-CMakeFiles/COMP_345_Project.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp" > CMakeFiles/COMP_345_Project.dir/main.cpp.i
+CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp" > CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.i
 
-CMakeFiles/COMP_345_Project.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp" -o CMakeFiles/COMP_345_Project.dir/main.cpp.s
+CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.s
 
 CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
 CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o: ../Part-5/core.cpp
@@ -122,37 +122,37 @@ CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.s
 
-CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
-CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o: ../Part-1/map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.cpp"
+CMakeFiles/COMP_345_Project.dir/main.cpp.o: CMakeFiles/COMP_345_Project.dir/flags.make
+CMakeFiles/COMP_345_Project.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_345_Project.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP_345_Project.dir/main.cpp.o -c "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp"
 
-CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.cpp" > CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.i
+CMakeFiles/COMP_345_Project.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_345_Project.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp" > CMakeFiles/COMP_345_Project.dir/main.cpp.i
 
-CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/map.cpp" -o CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.s
+CMakeFiles/COMP_345_Project.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_345_Project.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp" -o CMakeFiles/COMP_345_Project.dir/main.cpp.s
 
 # Object files for target COMP_345_Project
 COMP_345_Project_OBJECTS = \
-"CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o" \
-"CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o" \
-"CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o" \
-"CMakeFiles/COMP_345_Project.dir/main.cpp.o" \
+"CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o" \
+"CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o" \
+"CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o" \
+"CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o" \
 "CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o" \
-"CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o"
+"CMakeFiles/COMP_345_Project.dir/main.cpp.o"
 
 # External object files for target COMP_345_Project
 COMP_345_Project_EXTERNAL_OBJECTS =
 
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-1/Map.cpp.o
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Drivers/Tests.cpp.o
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-2/MapLoader.cpp.o
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/main.cpp.o
+COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-1/graphmap.cpp.o
+COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o
+COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o
+COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o
 COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o
-COMP_345_Project: CMakeFiles/COMP_345_Project.dir/Part-1/map.cpp.o
+COMP_345_Project: CMakeFiles/COMP_345_Project.dir/main.cpp.o
 COMP_345_Project: CMakeFiles/COMP_345_Project.dir/build.make
 COMP_345_Project: CMakeFiles/COMP_345_Project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable COMP_345_Project"
