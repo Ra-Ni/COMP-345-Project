@@ -8,13 +8,14 @@ class Player:graphmap{
 Player::Player()
 {
 }
-Player::Player(monster m, nodes* cz, DiceFacility df, token* t) {
-	monster = m;
-	currentZone = cz;
-	df = df;
-	token* = t;
-	
-}
+Player::Player(char monsterId, char graphmapId , char tokensId) {
+		monster = monsterId;
+		currentZone = graphmapId;
+		tokens= tokenId;  
+		
+		cards=null;
+		//playerDice?!
+	}
 
 Player::~Player()
 {
