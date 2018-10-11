@@ -1,26 +1,26 @@
 #pragma once
+//#include "core.h"
+//#include "Dice.h"
+//#include "DiceFacility.h"
 
-#include <string>
-using namespace std;
-
-class Player 
+class Player : public graphmap
 {
-
- 	string const name;
-	MonsterBoard *monster;
-	Map* currentZone;
-	Card cards[];
-	int token;
-	Dice playerDice;
+private:
+ 	monster monster;
+	DiceFacility::DiceFacility df;
+	Card* cards;
+	token* token;
+	nodes* currentZone;
+	
 
 
 public:
 
-	void move(Map *map);
+	void move();
 	void rollDice();
 	void resolveDice();
-	void BuyCards(Cards card);
-	void EndTurn();
+	void BuyCards(Card* card);
+	
 
 
 
@@ -28,15 +28,6 @@ public:
 public:
 	Player();
 	~Player();
-	Player(string n, Map *cz, MonsterBoard *m) {
-		name = n;
-		*currentZone = *cz;
-		*monster = *m;
-
+	Player(monster m, *nodes cz, DiceFacility df, token* t) {}
+		
 	};
-
-	
-	
-
-};
-
