@@ -1,7 +1,7 @@
 #include "Tests.h"
 #include "../Part-1/Map.h"
 #include "../Part-2/MapLoader.h"
-#include "../Part-5/core.h"
+#include "../Part-5/Part-5-old/core.h"
 #include <iostream>
 
 using namespace std;

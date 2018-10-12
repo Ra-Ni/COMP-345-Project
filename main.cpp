@@ -1,7 +1,7 @@
 #include "./Part-1/graphmap.h"
 #include "./Part-2/maploader.h"
-#include "Part-5/core.h"
-#include "Part-3/dice.h"
+#include "./Part-3/dice.h"
+#include "./Part-4/player.h"
 #include <iostream>
 #include <string>
 
@@ -94,26 +94,28 @@ Player p[i]= Player(_monsterId, _graphId, _tokenId);
     }
 }
 */
-
+/*
 namespace part5 {
     int main() {
-        cout << "Creating core object" << endl;
-        core c;
-        cout << "Resetting contents of core" << endl;
-        c.reset();
-        cout << "Printing core";
-        c.print();
-        return 0;
+            interface f;
+            f.print();
+            card d = f.drawCard();
+            cout << d._description;
+            //d._description = 9;
+            //cout << d._description;
+            return 0;
     }
-}
+}*/
 
 
 int main() {
     //part1::main();
     //part2::main();
-    part3::main();
+    //part3::main();
     //part4::main();
-    //part5::main();
+    player p;
+
+
 
 }
 

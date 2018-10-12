@@ -1,42 +1,25 @@
-#ifndef COMP_345_PROJECT_CONSTANTS_H
-#define COMP_345_PROJECT_CONSTANTS_H
-#endif
+#ifndef COMP_345_PROJECT_DECK_H
+#define COMP_345_PROJECT_DECK_H
 
-#include <iostream>
 
-/**
- * Contents of the game board
- */
-struct constants {
-    const std::string genericType[3] = {
-            "HEALTH",
-            "ENERGY",
-            "VICTORY"
-    };
-    const std::string buildingID[3] = {
-            "HOSPITAL",
-            "POWER PLANT",
-            "HIGH RISE"
-    };
-    const std::string unitID[3] = {
-            "INFANTRY",
-            "JET",
-            "TANK"
-    };
-    const std::string monsterID[6] = {
-            "SHERRIF",
-            "DRAKONIS",
-            "CAPTAIN FISH",
-            "MANTIS",
-            "ROB",
-            "KONG"
-    };
-    const std::string tokenID[4] = {
-            "Web",
-            "Jynx",
-            "Souvenir",
-            "Carpace"};
-    const std::string cardID[66] = {
+#include "card.h"
+#include <vector>
+
+class carddeck {
+    std::vector<card> cards;
+
+public:
+    carddeck();
+    ~carddeck();
+    void shuffle();
+    card &get();
+    const std::string to_string();
+};
+
+
+namespace cards {
+    const int DECK_SIZE = 66;
+    const std::string NAME[DECK_SIZE] = {
             "VIOLENT STAR",
             "SHARP SHOOTER",
             "OF ANOTHER WORLD",
@@ -105,13 +88,7 @@ struct constants {
             "STATUE OF LIBERTY"
     };
 
-    const std::string cardType[3] = {
-            "KEEP"
-            "DISCARD"
-            "GOAL"
-    };
-
-    const std::string cardDescription[66] = {
+    const std::string DESCRIPTION[DECK_SIZE] = {
             "Deal 2 damage to the Monster from whom you take Superstar. Deal 1 damage to the Monster who takes Superstar from you.",
             "You can destroy Jets that are not in your borough. Gain 1* each time you destroy a Jet.",
             "You can use H as E, and E as H.",
@@ -180,8 +157,11 @@ struct constants {
             "Take this card when you roll at least 3 Ouch!. Gain 3* when you take this card. Lose 3* when you lose this card."
     };
 
+    const int COST[DECK_SIZE] = {3, 4, 6, 7, 3, 5, 4, 5, 5, 6, 6, 10, 0, 5, 5, 9, 3, 5, 4, 12, 4, 9, 6, 6, 3, 4, 5,
+                                 5, 4, 5, 4, 5, 4, 5, 4, 4, 3, 5, 6, 5, 4, 4, 4, 4, 4, 4, 4, 3, 3, 4, 6, 6, 4, 12, 4,
+                                 5, 10, 5, 0, 4, 2, 5, 5, 3, 0, 0};
+}
 
-    const char cardCost[66] = {3, 4, 6, 7, 3, 5, 4, 5, 5, 6, 6, 10, 0, 5, 5, 9, 3, 5, 4, 12, 4, 9, 6, 6, 3, 4, 5,
-                                    5, 4, 5, 4, 5, 4, 5, 4, 4, 3, 5, 6, 5, 4, 4, 4, 4, 4, 4, 4, 3, 3, 4, 6, 6, 4, 12, 4,
-                                    5, 10, 5, 0, 4, 2, 5, 5, 3, 0, 0};
-};
+
+#endif //UNTITLED3_DECK_H
+

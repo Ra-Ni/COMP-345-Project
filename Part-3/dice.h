@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef COMP_345_PROJECT_DICE_H
+#define COMP_345_PROJECT_DICE_H
 #include <vector>
 #include <random>
 
@@ -39,3 +39,5 @@ public:
 
     void history();
 };
+
+#endif

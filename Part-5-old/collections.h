@@ -1,6 +1,5 @@
-#ifndef COMP_345_PROJECT_STRUCTURES_H
-#define COMP_345_PROJECT_STRUCTURES_H
-#endif
+#ifndef COMP_345_PROJECT_COLLECTIONS_H
+#define COMP_345_PROJECT_COLLECTIONS_H
 
 
 struct monster {
@@ -28,4 +27,6 @@ struct card {
     char _description;
     char _effect;
     char _cost;
+    bool _taken;
 };
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef COMP_345_PROJECT_MAPLOADER_H
+#define COMP_345_PROJECT_MAPLOADER_H
 
 #include <iostream>
 #include <vector>
@@ -22,3 +23,5 @@ public:
 
     bool isConnected();
 };
+
+#endif
