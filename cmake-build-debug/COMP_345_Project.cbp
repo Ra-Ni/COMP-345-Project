@@ -96,10 +96,10 @@
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.cpp">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dice.h">
 			<Option target="COMP_345_Project"/>
 		</Unit>
-		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.h">
+		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dicefacility.cpp">
 			<Option target="COMP_345_Project"/>
 		</Unit>
 		<Unit filename="/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp">

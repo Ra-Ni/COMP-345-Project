@@ -177,32 +177,32 @@ Part-2/maploader.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.s
 .PHONY : Part-2/maploader.cpp.s
 
-Part-3/ClsDice.o: Part-3/ClsDice.cpp.o
+Part-3/dicefacility.o: Part-3/dicefacility.cpp.o
 
-.PHONY : Part-3/ClsDice.o
+.PHONY : Part-3/dicefacility.o
 
 # target to build an object file
-Part-3/ClsDice.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o
-.PHONY : Part-3/ClsDice.cpp.o
+Part-3/dicefacility.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/dicefacility.cpp.o
+.PHONY : Part-3/dicefacility.cpp.o
 
-Part-3/ClsDice.i: Part-3/ClsDice.cpp.i
+Part-3/dicefacility.i: Part-3/dicefacility.cpp.i
 
-.PHONY : Part-3/ClsDice.i
+.PHONY : Part-3/dicefacility.i
 
 # target to preprocess a source file
-Part-3/ClsDice.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.i
-.PHONY : Part-3/ClsDice.cpp.i
+Part-3/dicefacility.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/dicefacility.cpp.i
+.PHONY : Part-3/dicefacility.cpp.i
 
-Part-3/ClsDice.s: Part-3/ClsDice.cpp.s
+Part-3/dicefacility.s: Part-3/dicefacility.cpp.s
 
-.PHONY : Part-3/ClsDice.s
+.PHONY : Part-3/dicefacility.s
 
 # target to generate assembly for a file
-Part-3/ClsDice.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.s
-.PHONY : Part-3/ClsDice.cpp.s
+Part-3/dicefacility.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP_345_Project.dir/build.make CMakeFiles/COMP_345_Project.dir/Part-3/dicefacility.cpp.s
+.PHONY : Part-3/dicefacility.cpp.s
 
 Part-4/Player.o: Part-4/Player.cpp.o
 
@@ -300,9 +300,9 @@ help:
 	@echo "... Part-2/maploader.o"
 	@echo "... Part-2/maploader.i"
 	@echo "... Part-2/maploader.s"
-	@echo "... Part-3/ClsDice.o"
-	@echo "... Part-3/ClsDice.i"
-	@echo "... Part-3/ClsDice.s"
+	@echo "... Part-3/dicefacility.o"
+	@echo "... Part-3/dicefacility.i"
+	@echo "... Part-3/dicefacility.s"
 	@echo "... Part-4/Player.o"
 	@echo "... Part-4/Player.i"
 	@echo "... Part-4/Player.s"

@@ -8,9 +8,9 @@ CMakeFiles/COMP_345_Project.dir/Part-2/maploader.cpp.o
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-1/graphmap.h
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.cpp
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-2/maploader.h
-CMakeFiles/COMP_345_Project.dir/Part-3/ClsDice.cpp.o
- /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.cpp
- /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/ClsDice.h
+CMakeFiles/COMP_345_Project.dir/Part-3/dicefacility.cpp.o
+ /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dice.h
+ /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dicefacility.cpp
 CMakeFiles/COMP_345_Project.dir/Part-4/Player.cpp.o
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.h
@@ -22,6 +22,6 @@ CMakeFiles/COMP_345_Project.dir/Part-5/core.cpp.o
 CMakeFiles/COMP_345_Project.dir/main.cpp.o
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-1/graphmap.h
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-2/maploader.h
- /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-3/ClsDice.h
+ /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dice.h
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
  /home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp

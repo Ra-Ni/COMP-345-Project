@@ -10,7 +10,7 @@ struct token;
 class ClsDice;
 
 
-class Player 
+class Player
 {
 /*
  	monster* monster;
@@ -22,23 +22,23 @@ class Player
 
 public:
 
-	void move(graphmap *map);
-	void rollDice();
-	void resolveDice();
-	void BuyCards(card card);
-	void EndTurn();
+    void move(graphmap *map);
+    void rollDice();
+    void resolveDice();
+    void BuyCards(card card);
+    void EndTurn();
 
 
 
 
 public:
-	Player();
-	~Player();
-	/*Player(char monsterId, char graphmapId , char tokensId) {}
-		*/
+    Player();
+    ~Player();
+    /*Player(char monsterId, char graphmapId , char tokensId) {}
+        */
 
-	
-	
+
+
 
 };
 

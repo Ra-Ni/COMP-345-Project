@@ -1,7 +1,7 @@
 #include "./Part-1/graphmap.h"
 #include "./Part-2/maploader.h"
-#include "./Part-3/ClsDice.h"
 #include "Part-5/core.h"
+#include "Part-3/dice.h"
 #include <iostream>
 #include <string>
 
@@ -49,103 +49,31 @@ namespace part2 {
 
 namespace part3 {
     int main() {
-
-        int _History[6] = {0};
-        ClsDice _BlackDice;
-        cout << " 1th Roll : Rolling all six Dices ... \n ";
-        for (int i = 0; i < 6; i++) {
-            _History[i] = _BlackDice.Roll();
-        }
-
-        // first rolling is done here
-        char _Answer;
-        char _ReRoll[6] = {0};
-        int _ResultOfNewRoll;
-        int _ResultOfReadingS;
-
-        cout << "The results are :";
-        for (int i = 0; i < 6; i++) {
-            cout << "\n Dice(" << i + 1 << ") Result = " << _BlackDice.GetName(_History[i]);
-
-        }
-        cout << endl;
-        cout << "\nFirst turn is done !\n*******************************************\n";
-
-        cout << "\n**********Ask For Rerolling 2 times more ( optional) ***********:\n";
-        cout << "\n Do you want to reroll ? " << endl;
-        cin >> _Answer;
-        if (_Answer == 'Y' || _Answer == 'y')  // if user says yes for the second turn, the third turn comes next
-        {
-            cout << " Which dices do you want to reroll agein ? (enter numbers without space) " << endl;
-            cin >> _ReRoll;
-            cout << "\n**********2th Roll***********:\n";
-            for (int i = 0; i < 6; i++) {
-                if (_ReRoll[i] != NULL) {
-
-                    _ResultOfReadingS = int(_ReRoll[i]) - 49;
-                    _ResultOfNewRoll = _BlackDice.Roll();
-                    _History[int(_ReRoll[i]) - 49] = _ResultOfNewRoll;
-
-                }
-            }
-            //*******************************************
-            cout << "\n The results are :";
-            for (int i = 0; i < 6; i++) {
-                cout << "\n Dice(" << i + 1 << ") Result = " << _BlackDice.GetName(_History[i]);
-            }
-            cout << "\n The Second rolling is DONE... \n**************************************\n ";
-
-
-            cout << "\n*********3th Roll**********:\n";
-            cout << "\n Do you want to reroll ? :" << endl;
-            cin >> _Answer;
-            if (_Answer == 'Y' || _Answer == 'y') {
-                cout << " Which dices do you want to reroll agein ? (enter numbers without space) " << endl;
-                cin >> _ReRoll;
-
-                for (int i = 0; i < 6; i++) {
-                    if (_ReRoll[i] != NULL) {
-
-                        _ResultOfReadingS = int(_ReRoll[i]) - 49;
-                        _ResultOfNewRoll = _BlackDice.Roll();
-                        _History[int(_ReRoll[i]) - 49] = _ResultOfNewRoll;
-
-                    }
-                }
-                //*******************************************
-                cout << "\n The results are :";
-                for (int i = 0; i < 6; i++) {
-                    cout << "\n Dice(" << i + 1 << ") Result = " << _BlackDice.GetName(_History[i]);
-                }
-                cout << endl;
-                cout << "\n Third rolling is done... \n--------------------------------\n ";
-                cout << "\n Dices were rerolled for three times !\n";
-
-
-            } else {
-                cout << "\n Dices were rerolled for two times !\n";
-
-            }
-        } else {
-            cout << "\n Dices were rolled for one time!\n";
-
-        }
-        cout << "******************Display The Final Result******************" << endl;
-        cout << "\n Rolling Dice overed ,Now You Can See The Result :\n ";
-        cout << "\n ==============================================\n";
-
-        for (int i = 0; i < 6; i++) {
-            cout << "\n Dice(" << i + 1 << ") Result = " << _BlackDice.GetName(_History[i]);
-        }
-        cout << "\n";
-        cout << "\n";
-        system("pause");
-        return 0;
-
+        dicefacility d;
+        cout << "First roll:";
+        d.print();
+        cout << "\nAttempting to request more than 6 dice to roll\nWill try to roll combinations 0143249177.";
+        string s = "0143249177";
+        d.roll(s);
+        d.print();
+        cout << "\nIt only rolled 0-4, with no repetitions since there are two 4s." << endl;
+        cout << "\nThe container returned the right values.\n" << endl;
+        cout << "Rolling two more times" << endl;
+        d.rollAll();
+        d.rollAll();
+        cout << "Does not allow more than three rolls.\n" << endl;
+        cout << "History of past rolls:" << endl;
+        d.history();
+        cout << "Creating another object" << endl;
+        dicefacility d2;
+        d2.rollAll();
+        d2.rollAll();
+        d2.history();
+        cout << "Histories are different, seed provides good uniformity." << endl;
     }
 }
-// ***************************************************
-/* namespace part4 {
+/*
+namespace part4 {
  int main() {
 cout<< "Please enter the number of players:<< endl;
 char numOfPlayers;
@@ -163,11 +91,8 @@ cout << " Please select a token for the player" << i <<": (should be a number be
 Player p[i]= Player(_monsterId, _graphId, _tokenId);
     }
 }
-
-
-}
-//****************************************************
 */
+
 namespace part5 {
     int main() {
         cout << "Creating core object" << endl;
@@ -181,8 +106,10 @@ namespace part5 {
 
 
 int main() {
-    part1::main();
+    //part1::main();
     //part2::main();
-    //part3::main();
+    part3::main();
     //part5::main();
+
 }
+

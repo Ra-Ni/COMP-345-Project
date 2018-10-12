@@ -6,11 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.cpp
-Player.h
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-1/graphmap.h
+vector
+-
 
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-4/Player.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-2/maploader.h
+iostream
+-
+vector
+-
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dice.h
+vector
+-
+random
+-
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
+
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/main.cpp
+./Part-1/graphmap.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-1/graphmap.h
+./Part-2/maploader.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/./Part-2/maploader.h
+Part-5/core.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-5/core.h
+Part-3/dice.h
+/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/Part-3/dice.h
+iostream
+-
 string
 -
 
