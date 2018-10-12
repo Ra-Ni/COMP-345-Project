@@ -1,41 +1,37 @@
 #pragma once
 
-#include <string>
-using namespace std;
-
+class dicefacility;
 class graphmap;
-// struct monster,
+struct monster;
 struct card;
 struct token;
-class ClsDice;
+
+
+struct genericShared {
+	static graphmap* currentZone;
+};
+
 
 
 class Player
 {
-/*
- 	monster* monster;
-	graphmap* currentZone;
+ 	monster* monsters;
 	card* cards;
 	token* tokens;
-	ClsDice* playerDice;
-*/
-
-public:
-
-    void move(graphmap *map);
-    void rollDice();
-    void resolveDice();
-    void BuyCards(card card);
-    void EndTurn();
-
-
+	dicefacility* playerDice;
 
 
 public:
     Player();
-    ~Player();
-    /*Player(char monsterId, char graphmapId , char tokensId) {}
-        */
+	~Player();
+    void move(int n);
+    void rollDice() {
+
+    }
+    void resolveDice();
+    void BuyCards(card card);
+    void EndTurn();
+
 
 
 

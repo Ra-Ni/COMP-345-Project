@@ -1,3 +1,7 @@
+//This is the header file for part 5/core which makes a core from different game elements
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
 #ifndef COMP_345_PROJECT_CPPPSA_H
 #define COMP_345_PROJECT_CPPPSA_H
 #endif
@@ -22,12 +26,20 @@ struct core {
     card *cards;
 
     ~core();
-
+/**
+ * Loading the core
+ */
     void load();
-
+/**
+ * Saving the current core
+ */
     void save();
-
+/**
+ * Resets the core to default
+ */
     void reset();
-
+/**
+ * Prints the information of the core
+ */
     void print();
 };

@@ -1,3 +1,9 @@
+//This is the main file for part 5/core which makes a core from different game elements
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+
+
 #include "core.h"
 #include "collections.h"
 #include "constants.h"
