@@ -3,9 +3,12 @@
 #include <fstream>
 
 using namespace std;
-
-maploader::maploader(std::string &pathname) {
-    this->path = pathname;
+/**
+ *
+ * @param pathname
+ */
+maploader::maploader(const std::string &path) {
+    this->path = path;
 }
 
 void maploader::read() {
@@ -50,12 +53,13 @@ void maploader::read() {
     in.close();
 }
 
-void maploader::print() {
-    g->to_string();
+const std::string maploader::to_string() {
+    string s = g->to_string();
     int i = 0;
     for (string &id : ID) {
-        std::cout << id << '(' << i++ << ')' << std::endl;
+        s+= id + '(' + std::to_string(i++) + ")\n";
     }
+    return s;
 }
 
 bool maploader::isConnected() {

@@ -1,27 +1,26 @@
 #ifndef COMP_345_PROJECT_MAPLOADER_H
 #define COMP_345_PROJECT_MAPLOADER_H
 
+#include "../Part-1/graphmap.h"
 #include <iostream>
 #include <vector>
 
-class graphmap;
 
 class maploader {
     std::vector<std::string> ID;
     std::string path;
-    graphmap *g{};
+    graphmap *g;
 
 
 public:
-    maploader() = default;
 
-    explicit maploader(std::string &pathname);
+    explicit maploader(const std::string &path);
 
     void read();
 
-    void print();
-
     bool isConnected();
+
+    const std::string to_string();
 };
 
 #endif

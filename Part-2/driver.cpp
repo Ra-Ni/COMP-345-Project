@@ -10,16 +10,14 @@ namespace part2 {
         maploader m(s);
         cout << "Reading the file" << endl;
         m.read();
-        cout << "Adjacency map:" << endl;
-        m.print();
+        cout << "Adjacency map:\n" << m.to_string();
         cout << "is map connected? " << (m.isConnected() ? "Yes" : "No") << endl;
         cout << "\n\nCreating new maploader object, with missing node 5 for all except node 6" << endl;
         s = "../Resources/bad.map";
         maploader m2(s);
         cout << "Reading the file" << endl;
         m2.read();
-        cout << "Adjacency map:" << endl;
-        m2.print();
+        cout << "Adjacency map:\n" << m2.to_string();
         cout << "is map connected? " << (m2.isConnected() ? "Yes" : "No") << endl;
         return 0;
     }
