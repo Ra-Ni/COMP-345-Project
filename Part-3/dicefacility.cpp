@@ -3,11 +3,12 @@
 #include <string>
 #include <functional>
 
-std::string const data[6] = {"Energy", "Attack", "Destruction", "Heal", "Celebrity", "Ouch!"};
 
 dicefacility::dicefacility() {
+    constants = new dice_constants{};
+    d = new dice{};
     for(int i = 0 ; i < 6; i++) {
-        die.emplace_back(d.roll());
+        die.emplace_back(d->roll());
     }
     max = 3;
     curr = 1;
@@ -20,7 +21,7 @@ void dicefacility::rollAll() {
         return;
     }
     for (int &i : die) {
-        i = d.roll();
+        i = d->roll();
     }
     curr++;
     logging();
@@ -35,7 +36,7 @@ void dicefacility::roll(std::string& s) {
         if(in < '0' || in > '6' || visited[in-48]) {
             continue;
         }
-        die[in-48] = d.roll();
+        die[in-48] = d->roll();
         visited[in-48] = true;
     }
     curr++;
@@ -46,7 +47,7 @@ void dicefacility::print() {
     int i = 0;
     std::cout<<std::endl;
     for(int in : die) {
-        std::cout << data[in-1] << '(' << i++ << ')' << std::endl;
+        std::cout << constants->data[in-1] << '(' << i++ << ')' << std::endl;
     }
 }
 

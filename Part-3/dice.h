@@ -14,12 +14,17 @@ struct dice {
     }
 };
 
+struct dice_constants {
+    std::string const data[6] = {"Energy", "Attack", "Destruction", "Heal", "Celebrity", "Ouch!"};
+};
+
 class dicefacility {
     std::vector<int> die;
     int max;
     int curr;
     std::string hlogg;
-    dice d{};
+    dice* d;
+    dice_constants* constants;
 
     void logging();
 

@@ -16,18 +16,19 @@ namespace part1 {
         cout << "Adjacency List:" << endl;
         g.print();
         cout << "\nIs this graph connected? " << (g.isGraphConnected() ? "Yes" : "No") << endl;
-        cout << "\nLinking object one to object two\n" << endl;
+        cout << "\nLinking object two to object one\n" << endl;
         g.link(1, 0);
         cout << "Adjacency List:" << endl;
         g.print();
         cout << "\nIs this graph connected? " << (g.isGraphConnected() ? "Yes" : "No") << endl;
+        return 0;
     }
 }
 
 namespace part2 {
     int main() {
         cout << "Creating string path to King Of New York.map" << endl;
-        string s = "./Resources/King\ Of\ New\ York.map";
+        string s = "../Resources/King Of New York.map";
         cout << "Creating maploader object containing file path" << endl;
         maploader m(s);
         cout << "Reading the file" << endl;
@@ -37,13 +38,14 @@ namespace part2 {
         cout << "is map connected? " << (m.isConnected() ? "Yes" : "No") << endl;
 
         cout << "\n\nCreating new maploader object, with missing node 5 for all except node 6" << endl;
-        s = "./Resources/bad.map";
+        s = "../Resources/bad.map";
         maploader m2(s);
         cout << "Reading the file" << endl;
         m2.read();
         cout << "Adjacency map:" << endl;
         m2.print();
         cout << "is map connected? " << (m2.isConnected() ? "Yes" : "No") << endl;
+        return 0;
     }
 }
 
@@ -70,6 +72,7 @@ namespace part3 {
         d2.rollAll();
         d2.history();
         cout << "Histories are different, seed provides good uniformity." << endl;
+        return 0;
     }
 }
 /*
@@ -101,6 +104,7 @@ namespace part5 {
         c.reset();
         cout << "Printing core";
         c.print();
+        return 0;
     }
 }
 
@@ -109,6 +113,7 @@ int main() {
     //part1::main();
     //part2::main();
     part3::main();
+    //part4::main();
     //part5::main();
 
 }

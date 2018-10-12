@@ -8,7 +8,7 @@ class graphmap;
 class maploader {
     std::vector<std::string> ID;
     std::string path;
-    graphmap *g;
+    graphmap *g{};
 
 
 public:

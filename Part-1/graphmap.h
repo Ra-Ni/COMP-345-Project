@@ -17,6 +17,5 @@ public:
 
     bool isGraphConnected();
 
-    //todo erase
     void print();
 };
