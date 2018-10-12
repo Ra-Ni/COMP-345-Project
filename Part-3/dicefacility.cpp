@@ -3,7 +3,9 @@
 #include <string>
 #include <functional>
 
-
+/**
+ *
+ */
 dicefacility::dicefacility() {
     constants = new dice_constants{};
     d = new dice{};
@@ -43,12 +45,13 @@ void dicefacility::roll(std::string &s) {
     logging();
 }
 
-void dicefacility::print() {
+const std::string dicefacility::to_string() {
     int i = 0;
-    std::cout << std::endl;
+    std::string s = "\n";
     for (int in : die) {
-        std::cout << constants->data[in - 1] << '(' << i++ << ')' << std::endl;
+        s += constants->data[in - 1] + '(' + std::to_string(i++) + ")\n";
     }
+    return s;
 }
 
 void dicefacility::logging() {
@@ -59,6 +62,6 @@ void dicefacility::logging() {
     hlogg += '\n';
 }
 
-void dicefacility::history() {
-    std::cout << hlogg << std::endl;
+const std::string dicefacility::history() {
+    return hlogg;
 }
