@@ -51,7 +51,7 @@ void maploader::read() {
 }
 
 void maploader::print() {
-    g->print();
+    g->to_string();
     int i = 0;
     for (string &id : ID) {
         std::cout << id << '(' << i++ << ')' << std::endl;

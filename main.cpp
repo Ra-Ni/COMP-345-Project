@@ -19,10 +19,10 @@ namespace part5 {
 }
 
 int main() {
-    //part1::main();
+    part1::main();
     //part2::main();
     //part3::main();
-    part4::main();
+    //part4::main();
     //part5::main();
 }
 
