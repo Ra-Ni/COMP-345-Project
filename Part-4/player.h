@@ -1,9 +1,11 @@
 #ifndef COMP_345_PROJECT_PLAYER_H
 #define COMP_345_PROJECT_PLAYER_H
 
-#include "../Part-5/carddeck.h"
-#include "../Part-5/tokendeck.h"
-#include "../Part-5/monsterdeck.h"
+#include "../Part-5/card.h"
+#include "../Part-5/token.h"
+#include "../Part-5/monster.h"
+
+#include <vector>
 
 class player {
 
@@ -23,7 +25,7 @@ public:
 
     bool requestToken(std::string token);
 
-
+    const std::string to_string();
 };
 
 

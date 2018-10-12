@@ -1,9 +1,10 @@
 #ifndef COMP_345_PROJECT_TOKENDECK_H
 #define COMP_345_PROJECT_TOKENDECK_H
 
+#include "token.h"
 #include <iostream>
 #include <vector>
-#include "token.h"
+
 
 namespace tokens {
     const int TOKEN_SIZE = 46;

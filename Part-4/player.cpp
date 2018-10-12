@@ -1,13 +1,15 @@
 
 #include "player.h"
 
+#include "../Part-5/carddeck.h"
+#include "../Part-5/tokendeck.h"
+#include "../Part-5/monsterdeck.h"
 
 namespace pshared {
     carddeck cards;
     tokendeck tokens;
     monsterdeck monsters;
 }
-
 
 player::player() = default;
 
@@ -35,4 +37,15 @@ bool player::requestToken(std::string token) {
         return false;
     }
     return true;
+}
+
+const std::string player::to_string() {
+    std::string s = "Player:\n" + (m->to_string());
+    for(auto& in : c) {
+        s+=in.to_string();
+    }
+    for(auto& in : t) {
+        s+=in.to_string();
+    }
+    return s;
 }

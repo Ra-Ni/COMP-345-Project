@@ -1,4 +1,4 @@
-#include "dice.h"
+#include "dicefacility.h"
 #include <iostream>
 #include <string>
 #include <functional>
