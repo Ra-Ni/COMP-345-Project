@@ -22,3 +22,6 @@ class Player:graphmap{
     }
 };
  */
+void Player::EndTurn() {
+
+}

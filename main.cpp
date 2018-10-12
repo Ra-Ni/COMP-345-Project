@@ -36,7 +36,6 @@ namespace part2 {
         cout << "Adjacency map:" << endl;
         m.print();
         cout << "is map connected? " << (m.isConnected() ? "Yes" : "No") << endl;
-
         cout << "\n\nCreating new maploader object, with missing node 5 for all except node 6" << endl;
         s = "../Resources/bad.map";
         maploader m2(s);
