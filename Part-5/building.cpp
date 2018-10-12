@@ -1,7 +1,7 @@
 #include "building.h"
 
 const bool building::hit(int i) {
-    _durability-=i;
+    _durability -= i;
     return _durability == 0;
 }
 
@@ -22,6 +22,7 @@ const int building::reward() {
 }
 
 std::string building::to_string() {
-    return "Name: " + _id + "\n\tType: "+_type+"\n\tDurability: "+std::to_string(_durability)+'/'+std::to_string(_reward) + "\n\tReward: "+std::to_string(_reward)+'\n';
+    return "Name: " + _id + "\n\tType: " + _type + "\n\tDurability: " + std::to_string(_durability) + '/' +
+           std::to_string(_reward) + "\n\tReward: " + std::to_string(_reward) + '\n';
 }
 

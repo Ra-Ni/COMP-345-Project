@@ -11,6 +11,7 @@ namespace tokens {
     const int DISTRIBUTION[4] = {13,13,5,15};
     const std::string NAME[4] = {"Web","Jynx","Souvenir","Carpace"};
 }
+
 class tokendeck {
     std::vector<token> tokens[4];
 public:
@@ -24,4 +25,4 @@ public:
 };
 
 
-#endif //UNTITLED3_TOKENDECK_H
+#endif

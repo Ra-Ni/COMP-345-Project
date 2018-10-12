@@ -11,8 +11,11 @@ class buildingdeck {
     std::vector<building> buildings;
 public:
     buildingdeck();
+
     ~buildingdeck();
+
     void shuffle();
+
     const std::string to_string();
 };
 
@@ -32,4 +35,4 @@ namespace buildings {
     };
 }
 
-#endif //UNTITLED3_BUILDINGDECK_H
+#endif

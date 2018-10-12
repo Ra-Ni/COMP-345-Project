@@ -2,11 +2,11 @@
 #include "monster.h"
 
 void monster::ouch(int i) {
-    _hp-=i;
+    _hp -= i;
 }
 
 void monster::heal(int i) {
-    _hp+=i;
+    _hp += i;
 }
 
 
@@ -23,6 +23,6 @@ const int monster::victory_points() {
 }
 
 const std::string monster::to_string() {
-    return "Name: " + _id + "\n\tHealth: " + std::to_string(_hp) + "\n\tVictory: "+std::to_string(_vp)+'\n';
+    return "Name: " + _id + "\n\tHealth: " + std::to_string(_hp) + "\n\tVictory: " + std::to_string(_vp) + '\n';
 }
 

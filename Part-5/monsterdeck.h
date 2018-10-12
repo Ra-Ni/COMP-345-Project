@@ -8,7 +8,7 @@
 
 namespace monsters {
     const int MONSTERS_SIZE = 6;
-    const std::string NAME[MONSTERS_SIZE] = {"Kong","Mantis","Sheriff","Drakonis","Rob","Captain Fish"};
+    const std::string NAME[MONSTERS_SIZE] = {"Kong", "Mantis", "Sheriff", "Drakonis", "Rob", "Captain Fish"};
 }
 
 class monsterdeck {
@@ -17,10 +17,13 @@ class monsterdeck {
 
 public:
     monsterdeck();
+
     ~monsterdeck();
-    monster* getMonster(std::string id);
+
+    monster *getMonster(std::string id);
+
     const std::string to_string();
 };
 
 
-#endif //UNTITLED3_PIECES_H
+#endif

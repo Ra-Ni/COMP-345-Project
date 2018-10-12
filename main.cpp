@@ -1,8 +1,3 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 namespace part1 {
     int main();
 }
@@ -28,11 +23,6 @@ int main() {
     //part2::main();
     //part3::main();
     part4::main();
-    //player p;
-    //buildingdeck b;
-    //cout << b.to_string();
-
-
-
+    //part5::main();
 }
 

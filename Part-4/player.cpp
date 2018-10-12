@@ -41,11 +41,11 @@ bool player::requestToken(std::string token) {
 
 const std::string player::to_string() {
     std::string s = "Player:\n" + (m->to_string());
-    for(auto& in : c) {
-        s+=in.to_string();
+    for (auto &in : c) {
+        s += in.to_string();
     }
-    for(auto& in : t) {
-        s+=in.to_string();
+    for (auto &in : t) {
+        s += in.to_string();
     }
     return s;
 }

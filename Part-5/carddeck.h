@@ -10,9 +10,13 @@ class carddeck {
 
 public:
     carddeck();
+
     ~carddeck();
+
     void shuffle();
+
     card &get();
+
     const std::string to_string();
 };
 
@@ -163,5 +167,5 @@ namespace cards {
 }
 
 
-#endif //UNTITLED3_DECK_H
+#endif
 

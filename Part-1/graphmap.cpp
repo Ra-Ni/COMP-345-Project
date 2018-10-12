@@ -34,7 +34,7 @@ void graphmap::DFS(int start) {
 bool graphmap::isGraphConnected() {
     bool flag = false;
     int i = 0;
-    while(!flag && i < size) {
+    while (!flag && i < size) {
         DFS(i++);
         for (char j = 0; j < size; j++) {
             if (!*(visited + j)) {

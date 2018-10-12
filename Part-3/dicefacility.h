@@ -1,16 +1,17 @@
 #ifndef COMP_345_PROJECT_DICE_H
 #define COMP_345_PROJECT_DICE_H
+
 #include <vector>
 #include <random>
 
 struct dice {
 
     dice() {
-        srand(static_cast<unsigned int>(time(nullptr)*random()));
+        srand(static_cast<unsigned int>(time(nullptr) * random()));
     }
 
     int roll() {
-        return rand()%6+1;
+        return rand() % 6 + 1;
     }
 };
 
@@ -23,8 +24,8 @@ class dicefacility {
     int max;
     int curr;
     std::string hlogg;
-    dice* d;
-    dice_constants* constants;
+    dice *d;
+    dice_constants *constants;
 
     void logging();
 
@@ -33,7 +34,7 @@ public:
 
     void rollAll();
 
-    void roll(std::string& s);
+    void roll(std::string &s);
 
     void print();
 

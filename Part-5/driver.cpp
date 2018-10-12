@@ -5,6 +5,7 @@
 #include "monsterdeck.h"
 #include "tokendeck.h"
 #include <iostream>
+
 using namespace std;
 
 namespace part5 {
@@ -22,5 +23,6 @@ namespace part5 {
         tokendeck t;
         cout << t.to_string();
         cout << endl;
+        return 0;
     }
 }

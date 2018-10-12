@@ -14,5 +14,5 @@ const int card::cost() {
 }
 
 const std::string card::to_string() {
-    return "Name: " + _name + "\n\tDescription: " + _description  + "\n\tCost: " + std::to_string(_cost) + '\n';
+    return "Name: " + _name + "\n\tDescription: " + _description + "\n\tCost: " + std::to_string(_cost) + '\n';
 }

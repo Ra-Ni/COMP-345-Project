@@ -7,7 +7,7 @@
 dicefacility::dicefacility() {
     constants = new dice_constants{};
     d = new dice{};
-    for(int i = 0 ; i < 6; i++) {
+    for (int i = 0; i < 6; i++) {
         die.emplace_back(d->roll());
     }
     max = 3;
@@ -16,7 +16,7 @@ dicefacility::dicefacility() {
 }
 
 void dicefacility::rollAll() {
-    if(curr >= max) {
+    if (curr >= max) {
         std::cout << "Cannot roll anymore" << std::endl;
         return;
     }
@@ -27,17 +27,17 @@ void dicefacility::rollAll() {
     logging();
 }
 
-void dicefacility::roll(std::string& s) {
-    std::vector<bool> visited(sizeof(die)/sizeof(int),false);
-    if(curr >= max) {
+void dicefacility::roll(std::string &s) {
+    std::vector<bool> visited(sizeof(die) / sizeof(int), false);
+    if (curr >= max) {
         std::cout << "Cannot roll anymore" << std::endl;
     }
-    for(char in : s) {
-        if(in < '0' || in > '6' || visited[in-48]) {
+    for (char in : s) {
+        if (in < '0' || in > '6' || visited[in - 48]) {
             continue;
         }
-        die[in-48] = d->roll();
-        visited[in-48] = true;
+        die[in - 48] = d->roll();
+        visited[in - 48] = true;
     }
     curr++;
     logging();
@@ -45,18 +45,18 @@ void dicefacility::roll(std::string& s) {
 
 void dicefacility::print() {
     int i = 0;
-    std::cout<<std::endl;
-    for(int in : die) {
-        std::cout << constants->data[in-1] << '(' << i++ << ')' << std::endl;
+    std::cout << std::endl;
+    for (int in : die) {
+        std::cout << constants->data[in - 1] << '(' << i++ << ')' << std::endl;
     }
 }
 
 void dicefacility::logging() {
-    hlogg+=("Roll #")+std::to_string(curr)+": ";
+    hlogg += ("Roll #") + std::to_string(curr) + ": ";
     for (int i : die) {
-        hlogg+=std::to_string(i)+" ";
+        hlogg += std::to_string(i) + " ";
     }
-    hlogg+='\n';
+    hlogg += '\n';
 }
 
 void dicefacility::history() {
