@@ -3,14 +3,21 @@
 #include <fstream>
 
 using namespace std;
+
 /**
- *
- * @param pathname
+ * Creates a maploader relevant to the pathname
+ * @param path of the map file
  */
 maploader::maploader(const std::string &path) {
     this->path = path;
 }
-
+/**
+ * Creates an ifstream to check if the file is good
+ * If the file is good, reads the file and sets flag for appropriate headers
+ * If either flag is false, then send out a file is invalid message and exit
+ * Creates a new map of size equivalent to the attributes in territories
+ * Links the appropriate parameters together using graphmap (Part1)
+ */
 void maploader::read() {
     std::ifstream in(path, std::ios::in);
     if (in.fail()) {
@@ -35,7 +42,7 @@ void maploader::read() {
         exit(-1);
     }
 
-    g = new graphmap((char) ID.size());
+    g = new graphmap((int)ID.size());
     while (!in.eof()) {
         getline(in, s);
         if (s.empty()) {
@@ -52,17 +59,26 @@ void maploader::read() {
     }
     in.close();
 }
+/**
+ * Checks whether or not the graph is connected
+ * @return true if the map is connected
+ */
+bool maploader::isConnected() {
+    return g->isGraphConnected();
+}
 
+/**
+ * Returns a string representation of the current map
+ * @return string mapping
+ */
 const std::string maploader::to_string() {
     string s = g->to_string();
     int i = 0;
     for (string &id : ID) {
-        s+= id + '(' + std::to_string(i++) + ")\n";
+        s += id + '(' + std::to_string(i++) + ")\n";
     }
     return s;
 }
 
-bool maploader::isConnected() {
-    return g->isGraphConnected();
-}
+
 
