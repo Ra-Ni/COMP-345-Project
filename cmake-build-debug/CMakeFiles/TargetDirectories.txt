@@ -1,3 +1,0 @@
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rrafid/Documents/COMP 345/Assignments/COMP-345-Project/cmake-build-debug/CMakeFiles/COMP_345_Project.dir
