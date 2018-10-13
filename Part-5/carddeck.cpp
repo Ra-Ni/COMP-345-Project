@@ -23,9 +23,8 @@ carddeck::carddeck() {
  * Destructor for curddeck class
  */
 carddeck::~carddeck() = default;
-//todo please add to this documentation a little more information:
 /**
- * This method shuffles the cards <<ADD HERE PLEASE>>
+ * This method shuffles the cards from beginning to end of the elements inside the vector
  */
 void carddeck::shuffle() {
     std::shuffle(cards.begin(), cards.end(), std::mt19937(std::random_device()()));

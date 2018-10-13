@@ -15,8 +15,6 @@
 #include <vector>
 
 class player {
-
-
     std::vector<card> c;
     std::vector<token> t;
     monster *m;

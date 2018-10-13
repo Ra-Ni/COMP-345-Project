@@ -72,7 +72,7 @@ const std::string dicefacility::to_string() {
     }
     return s;
 }
-//todo please check this method documentation:
+
 /**
  * Keeps track of dice sides after rolling
  */

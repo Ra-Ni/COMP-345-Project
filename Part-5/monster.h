@@ -20,7 +20,7 @@ public:
      */
     monster(std::string id) : _id(id), _hp(10), _vp(0) {
     }
-//todo Plase check this method documentation:
+
 /**
  * A method that implements Ouch on monster means reducing one H
  * @param i The number of Ouch occurs to the monster

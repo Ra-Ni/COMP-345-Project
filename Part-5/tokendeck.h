@@ -32,7 +32,7 @@ public:
      * Destructor for tokendeck object
      */
     ~tokendeck();
-    // todo please check if I write the correct return type for these methods
+
     /**
      * Accessor method to get web tokens
      * @return Reference to web token

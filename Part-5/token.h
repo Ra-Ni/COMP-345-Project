@@ -13,10 +13,9 @@ class token {
     std::string _id;
 
 public:
-    //todo please fill out this method documentation
 /**
- * Parametrized constructor for token objects???
- * @param id ???
+ * Parametrized constructor for token objects
+ * @param id string id of token
  */
     explicit token(std::string id) : _id(move(id)) {
     }
