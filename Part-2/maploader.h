@@ -1,3 +1,9 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+/**
+ *This is the header file for part 2 to implement the maploader
+ */
 #ifndef COMP_345_PROJECT_MAPLOADER_H
 #define COMP_345_PROJECT_MAPLOADER_H
 

@@ -1,3 +1,10 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+/**
+ *This is the main file for part 2 to implement the maploader
+ */
+
 #include "maploader.h"
 #include "../Part-1/graphmap.h"
 #include <fstream>

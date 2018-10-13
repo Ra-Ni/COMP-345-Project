@@ -1,3 +1,10 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+/**
+* This is the main file to implement the graphmap class
+*/
+
 #include "graphmap.h"
 
 /**

@@ -1,3 +1,12 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+
+/**
+ *This is the driver for part 2 to test the maploader
+ */
+
+
 #include "maploader.h"
 #include <iostream>
 

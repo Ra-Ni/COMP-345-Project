@@ -1,14 +1,22 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+
+/**
+ * This is the main file for part 3 which implements the dicefacility
+ */
+
 #include "dicefacility.h"
 #include <iostream>
 #include <string>
 #include <functional>
 
 /**
- *
+ *Default Constructor for creation of dicefacility objects
  */
 dicefacility::dicefacility() {
     constants = new dice_constants{};
-    d = new dice{};
+    d = new dice{};  //Creates dice object which gives random side
     for (int i = 0; i < 6; i++) {
         die.emplace_back(d->roll());
     }
@@ -16,7 +24,9 @@ dicefacility::dicefacility() {
     curr = 1;
     logging();
 }
-
+/**
+ * Rolls all 6 die while keeping track of number of times a player is allowed to roll
+ */
 void dicefacility::rollAll() {
     if (curr >= max) {
         std::cout << "Cannot roll anymore" << std::endl;
@@ -29,6 +39,10 @@ void dicefacility::rollAll() {
     logging();
 }
 
+/**
+ * Rolls only the die represented by the string (as an integer)
+ * @param s A number of type string (as an integer) which relevant to the dice number
+ */
 void dicefacility::roll(std::string &s) {
     std::vector<bool> visited(sizeof(die) / sizeof(int), false);
     if (curr >= max) {
@@ -44,7 +58,10 @@ void dicefacility::roll(std::string &s) {
     curr++;
     logging();
 }
-
+/**
+ * ToString method to be used by any object of dicefacility
+ * @return The results of the current roll
+ */
 const std::string dicefacility::to_string() {
     int i = 0;
     std::string s = "\n";
@@ -53,7 +70,10 @@ const std::string dicefacility::to_string() {
     }
     return s;
 }
-
+//todo please check this method documentation:
+/**
+ * Keeps track of dice sides after rolling
+ */
 void dicefacility::logging() {
     hlogg += ("Roll #") + std::to_string(curr) + ": ";
     for (int i : die) {
@@ -61,7 +81,10 @@ void dicefacility::logging() {
     }
     hlogg += '\n';
 }
-
+/**
+ * Returns a statement as a string for the history of the rolls
+ * @return The history of the rolls
+ */
 const std::string dicefacility::history() {
     return hlogg;
 }

@@ -1,3 +1,11 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+
+/**
+ * This is the header file for part 3 which implements the dicefacility
+ */
+
 #ifndef COMP_345_PROJECT_DICE_H
 #define COMP_345_PROJECT_DICE_H
 
