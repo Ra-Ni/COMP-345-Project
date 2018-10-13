@@ -24,6 +24,7 @@ dicefacility::dicefacility() {
     curr = 1;
     logging();
 }
+
 /**
  * Rolls all 6 die while keeping track of number of times a player is allowed to roll
  */
@@ -58,6 +59,7 @@ void dicefacility::roll(std::string &s) {
     curr++;
     logging();
 }
+
 /**
  * ToString method to be used by any object of dicefacility
  * @return The results of the current roll
@@ -81,6 +83,7 @@ void dicefacility::logging() {
     }
     hlogg += '\n';
 }
+
 /**
  * Returns a statement as a string for the history of the rolls
  * @return The history of the rolls

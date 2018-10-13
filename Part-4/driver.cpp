@@ -1,3 +1,10 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+
+/**
+ *This is the driver for part 4 to test the player
+ */
 #include <iostream>
 #include "player.h"
 

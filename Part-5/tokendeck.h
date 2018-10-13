@@ -16,8 +16,8 @@
 
 namespace tokens {
     const int TOKEN_SIZE = 46;
-    const int DISTRIBUTION[4] = {13,13,5,15};
-    const std::string NAME[4] = {"Web","Jynx","Souvenir","Carpace"};
+    const int DISTRIBUTION[4] = {13, 13, 5, 15};
+    const std::string NAME[4] = {"Web", "Jynx", "Souvenir", "Carpace"};
 }
 
 class tokendeck {
@@ -27,6 +27,7 @@ public:
      * Defaullt constructor fo tokendeck class
      */
     tokendeck();
+
     /**
      * Destructor for tokendeck object
      */
@@ -36,22 +37,26 @@ public:
      * Accessor method to get web tokens
      * @return Reference to web token
      */
-    token& getWeb();
+    token &getWeb();
+
     /**
      *Accessor method to get jynx tokens
      * @return Reference to jynx token
      */
-    token& getJynx();
+    token &getJynx();
+
     /**
      *Accessor method to get souvenir tokens
      * @return Reference to souvenir token
      */
-    token& getSouvenir();
+    token &getSouvenir();
+
     /**
      *Accessor method to get carpace tokens
      * @return Reference to carpace token
      */
-    token& getCarpace();
+    token &getCarpace();
+
     /**
      * ToString method for tokendeck
      * @return Information of tokens as a statement of type String

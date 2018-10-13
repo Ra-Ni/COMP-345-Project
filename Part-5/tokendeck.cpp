@@ -63,6 +63,7 @@ token &tokendeck::getCarpace() {
     tokens[3].pop_back();
     return t;
 }
+
 /**
      * ToString method for token objects
      * @return Information (type and quantity) of tokendeck as a statement of type String

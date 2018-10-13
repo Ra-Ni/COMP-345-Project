@@ -1,3 +1,9 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+/**
+ *This is one of the header files for part5 to implement the carddeck
+ */
 #ifndef COMP_345_PROJECT_DECK_H
 #define COMP_345_PROJECT_DECK_H
 
@@ -9,18 +15,35 @@ class carddeck {
     std::vector<card> cards;
 
 public:
+    /**
+     * Default constructor for carddeck class
+     */
     carddeck();
 
+    /**
+     * Destructor for curddeck class
+     */
     ~carddeck();
 
+    /**
+     * This method shuffles the cards
+     */
     void shuffle();
 
+/**
+ * Accessor method that returns a card reference in the carddeck
+ * @return A card reference  in the carddeck
+ */
     card &get();
 
+/**
+ * ToString method for carddeck
+ * @return Information of carddeck as a statement of type String
+ */
     const std::string to_string();
 };
 
-
+// In this part all the card names, card descriptions and card costs are defined
 namespace cards {
     const int DECK_SIZE = 66;
     const std::string NAME[DECK_SIZE] = {

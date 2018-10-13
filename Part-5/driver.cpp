@@ -1,4 +1,10 @@
-
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+/**
+ *This is the driver file that tests part 5, it creates different objects of different elements
+ * and shows the information of them using the toString methods.
+ */
 
 #include "buildingdeck.h"
 #include "carddeck.h"

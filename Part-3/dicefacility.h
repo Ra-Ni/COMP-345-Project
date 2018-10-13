@@ -22,6 +22,7 @@ struct dice {
     dice() {
         srand(static_cast<unsigned int>(time(nullptr) * random()));
     }
+
 /**
  * Rolls the dice, and returns the result as an integer between [1,6]
  * @return the result of a roll in the range of [1,6]
@@ -30,6 +31,7 @@ struct dice {
         return rand() % 6 + 1;
     }
 };
+
 /**
  * Defines the faces of a dice as constants
  * Also used as a translator
@@ -37,6 +39,7 @@ struct dice {
 struct dice_constants {
     std::string const data[6] = {"Energy", "Attack", "Destruction", "Heal", "Celebrity", "Ouch!"};
 };
+
 /**
  * Creates a DiceFacility interface for players wishing to roll between 1-6 dices
  */
@@ -55,18 +58,22 @@ public:
  * Default Constructor
  */
     dicefacility();
+
 /**
  * Rolls all 6 die
  */
     void rollAll();
+
 /**
  * Rolls only the die represented by the string (as an integer)
  */
     void roll(std::string &s);
+
 /**
  * Returns the results of the current roll
  */
     const std::string to_string();
+
 /**
  * Returns the history of the rolls
  */

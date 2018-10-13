@@ -1,3 +1,10 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
+
+/**
+ * This is the header file for part 4 which implements the player
+ */
 #ifndef COMP_345_PROJECT_PLAYER_H
 #define COMP_345_PROJECT_PLAYER_H
 

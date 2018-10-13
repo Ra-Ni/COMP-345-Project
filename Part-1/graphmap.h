@@ -1,9 +1,9 @@
 /**
  * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
  */
- /**
-  * This is the header file to implement the graphmap class
-  */
+/**
+ * This is the header file to implement the graphmap class
+ */
 #ifndef COMP_345_PROJECT_GRAPHMAP_H
 #define COMP_345_PROJECT_GRAPHMAP_H
 

@@ -16,7 +16,8 @@ namespace part3 {
         dicefacility d; // Creates an object of type dicefacility
         cout << "First roll:";
         cout << d.to_string() << endl; // Shows the information of dice
-        cout << "\nAttempting to request more than 6 dicefacility to roll\nWill try to roll combinations 0143249177."; // Tests if player is able to roll more than 6 times
+        cout
+                << "\nAttempting to request more than 6 dicefacility to roll\nWill try to roll combinations 0143249177."; // Tests if player is able to roll more than 6 times
         string s = "0143249177";
         d.roll(s);
         cout << d.to_string() << endl;

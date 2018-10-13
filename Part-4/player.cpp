@@ -1,4 +1,10 @@
+/**
+ * @author: Rani Rafid, Mansoureh Edalati, Seyedhossein Noorbakhsh
+ */
 
+/**
+ * This is the main file for part 4 which implements the player
+ */
 #include "player.h"
 
 #include "../Part-5/carddeck.h"
@@ -11,10 +17,21 @@ namespace pshared {
     monsterdeck monsters;
 }
 
+/**
+ * Default constructor for player class
+ */
 player::player() = default;
 
+/**
+ * Destructor for player objects
+ */
 player::~player() = default;
 
+/**
+ * This method takes a name for monster as parameter and returns true if the monster name has  ...
+ * @param name
+ * @return
+ */
 bool player::requestMonster(std::string name) {
     m = pshared::monsters.getMonster(name);
     return m != nullptr;
