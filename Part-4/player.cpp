@@ -37,10 +37,18 @@ bool player::requestMonster(std::string name) {
     return m != nullptr;
 }
 
+/**
+ * Draw a card
+ */
 void player::draw() {
     c.push_back(pshared::cards.get());
 }
 
+/**
+ * Requests a particular token by name
+ * @param token name of token
+ * @return true if request accepted, else false
+ */
 bool player::requestToken(std::string token) {
     if (token == tokens::NAME[0]) {
         t.push_back(pshared::tokens.getWeb());
@@ -56,7 +64,9 @@ bool player::requestToken(std::string token) {
     return true;
 }
 
-
+/**
+ * Prompts to roll a dice (Maximum 3 times) until end of turn
+ */
 void player::roll() {
     std::string s;
     while(true) {
@@ -74,6 +84,17 @@ void player::roll() {
     }
 }
 
+/**
+ * Ends the turn of a player, resetting the dicefacility object
+ */
+void player::endTurn() {
+    d.reset();
+}
+
+/**
+ * Saves player stats as string, and returns
+ * @return returns a string representation of player stats
+ */
 const std::string player::to_string() {
     std::string s = "Player:\n" + (m->to_string());
     for (auto &in : c) {
@@ -85,7 +106,4 @@ const std::string player::to_string() {
     return s;
 }
 
-void player::endTurn() {
-    d.reset();
-}
 
