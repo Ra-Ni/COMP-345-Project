@@ -3,6 +3,8 @@
  */
 /**
  *This is the main file for part 2 to implement the maploader
+ * it can read any map file if it is valid it can open it .in 
+ * the map file it checks all edges that are connected or not .
  */
 
 #include "maploader.h"
@@ -29,6 +31,7 @@ maploader::maploader(const std::string &path) {
 void maploader::read() {
     std::ifstream in(path, std::ios::in);
     if (in.fail()) {
+        //input stream
         std::cout << "Failed to open the file" << std::endl;
         exit(-1);
     }
@@ -44,7 +47,7 @@ void maploader::read() {
             ID.push_back(s);
         }
     }
-
+    //if there is no connection map file in invalid
     if (!(flag[0] && flag[1])) {
         std::cout << "File is invalid" << std::endl;
         exit(-1);
