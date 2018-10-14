@@ -34,7 +34,8 @@ int main() {
             case 3: part3::main(); break;
             case 4: part4::main(); break;
             case 5: part5::main(); break;
-            default: return 1;
+            default:
+                return 0;
         }
         cout << "================= END =================\n";
     }
