@@ -57,8 +57,8 @@ public:
     const int reward();
 
 /**
- *
- * @return
+ * returns string representation of the building stats
+ * @return string
  */
     std::string to_string();
 };
