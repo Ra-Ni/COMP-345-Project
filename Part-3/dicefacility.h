@@ -69,6 +69,7 @@ public:
  */
     void roll(std::string &s);
 
+    void reset();
 /**
  * Returns the results of the current roll
  */

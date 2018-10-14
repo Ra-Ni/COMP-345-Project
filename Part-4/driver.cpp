@@ -22,6 +22,8 @@ namespace part4 {
         p.requestMonster("Sheriff");
         cout << "Player stats:\n";
         cout << p.to_string() << endl;
+        cout << "Player rolls:\n";
+        p.roll();
         return 0;
     }
 }

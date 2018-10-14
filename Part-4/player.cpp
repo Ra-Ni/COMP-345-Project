@@ -56,6 +56,24 @@ bool player::requestToken(std::string token) {
     return true;
 }
 
+
+void player::roll() {
+    std::string s;
+    while(true) {
+        std::cout << d.to_string();
+        std::cout << "roll all(-1), roll selected(enter string #s), or stay/exit(-2)? : ";
+        std::cin >> s;
+        if (s == "-2") {
+            return;
+        }
+        if (s == "-1") {
+            d.rollAll();
+        } else {
+            d.roll(s);
+        }
+    }
+}
+
 const std::string player::to_string() {
     std::string s = "Player:\n" + (m->to_string());
     for (auto &in : c) {
@@ -66,3 +84,8 @@ const std::string player::to_string() {
     }
     return s;
 }
+
+void player::endTurn() {
+    d.reset();
+}
+

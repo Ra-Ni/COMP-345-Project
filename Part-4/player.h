@@ -11,6 +11,7 @@
 #include "../Part-5/card.h"
 #include "../Part-5/token.h"
 #include "../Part-5/monster.h"
+#include "../Part-3/dicefacility.h"
 
 #include <vector>
 
@@ -18,6 +19,7 @@ class player {
     std::vector<card> c;
     std::vector<token> t;
     monster *m;
+    dicefacility d;
 public:
     player();
 
@@ -30,7 +32,13 @@ public:
 
     bool requestToken(std::string token);
 
+    void roll();
+
+    void endTurn();
+
     const std::string to_string();
+
+
 };
 
 

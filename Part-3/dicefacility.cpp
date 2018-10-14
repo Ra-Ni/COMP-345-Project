@@ -84,6 +84,11 @@ void dicefacility::logging() {
     hlogg += '\n';
 }
 
+void dicefacility::reset() {
+    curr = 0;
+    rollAll();
+}
+
 /**
  * Returns a statement as a string for the history of the rolls
  * @return The history of the rolls
@@ -91,3 +96,5 @@ void dicefacility::logging() {
 const std::string dicefacility::history() {
     return hlogg;
 }
+
+
