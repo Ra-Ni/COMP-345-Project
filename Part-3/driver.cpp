@@ -13,12 +13,13 @@ using namespace std;
 
 namespace part3 {
     int main() {
-        dicefacility d; // Creates an object of type dicefacility
+        dicefacility d; // call dice object of type dicefacility
         cout << "First roll:";
-        cout << d.to_string() << endl; // Shows the information of dice
+        cout << d.to_string() << endl; // Display the first roll dice
         cout
                 << "\nAttempting to request more than 6 dicefacility to roll\nWill try to roll combinations 0143249177."; // Tests if player is able to roll more than 6 times
         string s = "0143249177";
+        // call the roll fucntion 
         d.roll(s);
         cout << d.to_string() << endl;
         cout << "\nIt only rolled 0-4, with no repetitions since there are two 4s." << endl;
